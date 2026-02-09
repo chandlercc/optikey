@@ -45,7 +45,7 @@ jobs:
 
       # Upload unsigned application executable
       - name: Upload unsigned application EXE
-        id: upload-unsigned-app
+        id: upload-unsigned-app-pro
         uses: actions/upload-artifact@v4
         with:
           name: optikey-pro-app-unsigned
@@ -54,7 +54,7 @@ jobs:
 
       # Submit application EXE to SignPath (Stage 1)
       - name: Submit application EXE for signing (Stage 1)
-        id: sign-application
+        id: sign-application-pro
         uses: signpath/github-action-submit-signing-request@v2
         with:
           api-token: '${{ secrets.SIGNPATH_API_TOKEN }}'
@@ -62,7 +62,7 @@ jobs:
           project-slug: 'OptiKey'
           artifact-configuration-slug: 'OptikeyProApp'
           signing-policy-slug: 'test-signing'
-          github-artifact-id: '${{ steps.upload-unsigned-app.outputs.artifact-id }}'
+          github-artifact-id: '${{ steps.upload-unsigned-app-pro.outputs.artifact-id }}'
           wait-for-completion: true
           output-artifact-directory: 'app-signed'
 
@@ -112,7 +112,7 @@ jobs:
 
       # Upload unsigned installer (contains signed app EXE)
       - name: Upload unsigned installer
-        id: upload-unsigned-installer
+        id: upload-unsigned-installer-pro
         uses: actions/upload-artifact@v4
         with:
           name: optikey-pro-installer-unsigned
@@ -121,7 +121,7 @@ jobs:
 
       # Submit installer to SignPath (Stage 2)
       - name: Submit installer for signing (Stage 2)
-        id: sign-installer
+        id: sign-installer-pro
         uses: signpath/github-action-submit-signing-request@v2
         with:
           api-token: '${{ secrets.SIGNPATH_API_TOKEN }}'
@@ -129,7 +129,7 @@ jobs:
           project-slug: 'OptiKey'
           artifact-configuration-slug: 'OptikeyProInstaller'
           signing-policy-slug: 'test-signing'
-          github-artifact-id: '${{ steps.upload-unsigned-installer.outputs.artifact-id }}'
+          github-artifact-id: '${{ steps.upload-unsigned-installer-pro.outputs.artifact-id }}'
           wait-for-completion: true
           output-artifact-directory: 'installer-signed'
 
@@ -178,7 +178,7 @@ jobs:
 
       # Upload unsigned application executable
       - name: Upload unsigned application EXE
-        id: upload-unsigned-app
+        id: upload-unsigned-app-chat
         uses: actions/upload-artifact@v4
         with:
           name: optikey-chat-app-unsigned
@@ -187,7 +187,7 @@ jobs:
 
       # Submit application EXE to SignPath (Stage 1)
       - name: Submit application EXE for signing (Stage 1)
-        id: sign-application
+        id: sign-application-chat
         uses: signpath/github-action-submit-signing-request@v2
         with:
           api-token: '${{ secrets.SIGNPATH_API_TOKEN }}'
@@ -195,7 +195,7 @@ jobs:
           project-slug: 'OptiKey'
           artifact-configuration-slug: 'OptikeyChatApp'
           signing-policy-slug: 'test-signing'
-          github-artifact-id: '${{ steps.upload-unsigned-app.outputs.artifact-id }}'
+          github-artifact-id: '${{ steps.upload-unsigned-app-chat.outputs.artifact-id }}'
           wait-for-completion: true
           output-artifact-directory: 'app-signed'
 
@@ -245,7 +245,7 @@ jobs:
 
       # Upload unsigned installer (contains signed app EXE)
       - name: Upload unsigned installer
-        id: upload-unsigned-installer
+        id: upload-unsigned-installer-chat
         uses: actions/upload-artifact@v4
         with:
           name: optikey-chat-installer-unsigned
@@ -254,7 +254,7 @@ jobs:
 
       # Submit installer to SignPath (Stage 2)
       - name: Submit installer for signing (Stage 2)
-        id: sign-installer
+        id: sign-installer-chat
         uses: signpath/github-action-submit-signing-request@v2
         with:
           api-token: '${{ secrets.SIGNPATH_API_TOKEN }}'
@@ -262,7 +262,7 @@ jobs:
           project-slug: 'OptiKey'
           artifact-configuration-slug: 'OptikeyChatInstaller'
           signing-policy-slug: 'test-signing'
-          github-artifact-id: '${{ steps.upload-unsigned-installer.outputs.artifact-id }}'
+          github-artifact-id: '${{ steps.upload-unsigned-installer-chat.outputs.artifact-id }}'
           wait-for-completion: true
           output-artifact-directory: 'installer-signed'
 
@@ -311,7 +311,7 @@ jobs:
 
       # Upload unsigned application executable
       - name: Upload unsigned application EXE
-        id: upload-unsigned-app
+        id: upload-unsigned-app-symbol
         uses: actions/upload-artifact@v4
         with:
           name: optikey-symbol-app-unsigned
@@ -320,7 +320,7 @@ jobs:
 
       # Submit application EXE to SignPath (Stage 1)
       - name: Submit application EXE for signing (Stage 1)
-        id: sign-application
+        id: sign-application-symbol
         uses: signpath/github-action-submit-signing-request@v2
         with:
           api-token: '${{ secrets.SIGNPATH_API_TOKEN }}'
@@ -328,7 +328,7 @@ jobs:
           project-slug: 'OptiKey'
           artifact-configuration-slug: 'OptikeySymbolApp'
           signing-policy-slug: 'test-signing'
-          github-artifact-id: '${{ steps.upload-unsigned-app.outputs.artifact-id }}'
+          github-artifact-id: '${{ steps.upload-unsigned-app-symbol.outputs.artifact-id }}'
           wait-for-completion: true
           output-artifact-directory: 'app-signed'
 
@@ -378,7 +378,7 @@ jobs:
 
       # Upload unsigned installer (contains signed app EXE)
       - name: Upload unsigned installer
-        id: upload-unsigned-installer
+        id: upload-unsigned-installer-symbol
         uses: actions/upload-artifact@v4
         with:
           name: optikey-symbol-installer-unsigned
@@ -387,7 +387,7 @@ jobs:
 
       # Submit installer to SignPath (Stage 2)
       - name: Submit installer for signing (Stage 2)
-        id: sign-installer
+        id: sign-installer-symbol
         uses: signpath/github-action-submit-signing-request@v2
         with:
           api-token: '${{ secrets.SIGNPATH_API_TOKEN }}'
@@ -395,7 +395,7 @@ jobs:
           project-slug: 'OptiKey'
           artifact-configuration-slug: 'OptikeySymbolInstaller'
           signing-policy-slug: 'test-signing'
-          github-artifact-id: '${{ steps.upload-unsigned-installer.outputs.artifact-id }}'
+          github-artifact-id: '${{ steps.upload-unsigned-installer-symbol.outputs.artifact-id }}'
           wait-for-completion: true
           output-artifact-directory: 'installer-signed'
 
@@ -444,7 +444,7 @@ jobs:
 
       # Upload unsigned application executable
       - name: Upload unsigned application EXE
-        id: upload-unsigned-app
+        id: upload-unsigned-app-mouse
         uses: actions/upload-artifact@v4
         with:
           name: optikey-mouse-app-unsigned
@@ -453,7 +453,7 @@ jobs:
 
       # Submit application EXE to SignPath (Stage 1)
       - name: Submit application EXE for signing (Stage 1)
-        id: sign-application
+        id: sign-application-mouse
         uses: signpath/github-action-submit-signing-request@v2
         with:
           api-token: '${{ secrets.SIGNPATH_API_TOKEN }}'
@@ -461,7 +461,7 @@ jobs:
           project-slug: 'OptiKey'
           artifact-configuration-slug: 'OptikeyMouseApp'
           signing-policy-slug: 'test-signing'
-          github-artifact-id: '${{ steps.upload-unsigned-app.outputs.artifact-id }}'
+          github-artifact-id: '${{ steps.upload-unsigned-app-mouse.outputs.artifact-id }}'
           wait-for-completion: true
           output-artifact-directory: 'app-signed'
 
@@ -511,7 +511,7 @@ jobs:
 
       # Upload unsigned installer (contains signed app EXE)
       - name: Upload unsigned installer
-        id: upload-unsigned-installer
+        id: upload-unsigned-installer-mouse
         uses: actions/upload-artifact@v4
         with:
           name: optikey-mouse-installer-unsigned
@@ -520,7 +520,7 @@ jobs:
 
       # Submit installer to SignPath (Stage 2)
       - name: Submit installer for signing (Stage 2)
-        id: sign-installer
+        id: sign-installer-mouse
         uses: signpath/github-action-submit-signing-request@v2
         with:
           api-token: '${{ secrets.SIGNPATH_API_TOKEN }}'
@@ -528,7 +528,7 @@ jobs:
           project-slug: 'OptiKey'
           artifact-configuration-slug: 'OptikeyMouseInstaller'
           signing-policy-slug: 'test-signing'
-          github-artifact-id: '${{ steps.upload-unsigned-installer.outputs.artifact-id }}'
+          github-artifact-id: '${{ steps.upload-unsigned-installer-mouse.outputs.artifact-id }}'
           wait-for-completion: true
           output-artifact-directory: 'installer-signed'
 
