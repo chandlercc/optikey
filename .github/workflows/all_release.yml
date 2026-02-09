@@ -44,7 +44,7 @@ jobs:
       # ============================================================
 
       # Upload unsigned application executable
-      - name: Optikey Pro: Upload unsigned application EXE
+      - name: Optikey Pro Upload unsigned application EXE
         id: upload-unsigned-app-pro
         uses: actions/upload-artifact@v4
         with:
@@ -53,7 +53,7 @@ jobs:
           if-no-files-found: error
 
       # Submit application EXE to SignPath (Stage 1)
-      - name: Optikey Pro: Submit application EXE for signing (Stage 1)
+      - name: Optikey Pro Submit application EXE for signing (Stage 1)
         id: sign-application-pro
         uses: signpath/github-action-submit-signing-request@v2
         with:
@@ -67,7 +67,7 @@ jobs:
           output-artifact-directory: 'app-signed'
 
       # Copy signed EXE back to build output
-      - name: Optikey Pro: Copy signed EXE to build output
+      - name: Optikey Pro Copy signed EXE to build output
         shell: pwsh
         run: |
           $releaseDir = "src\JuliusSweetland.OptiKey.Pro\bin\x64\Release"
@@ -83,7 +83,7 @@ jobs:
       # ============================================================
 
       # Setup Advanced Installer
-      - name: Optikey Pro: Setup Advanced Installer
+      - name: Optikey Pro Setup Advanced Installer
         uses: caphyon/advinst-github-action@main
         with:
           advinst-version: '21.4'
@@ -111,7 +111,7 @@ jobs:
           Write-Host "Installer build completed successfully"
 
       # Upload unsigned installer (contains signed app EXE)
-      - name: Optikey Pro: Upload unsigned installer
+      - name: Optikey Pro Upload unsigned installer
         id: upload-unsigned-installer-pro
         uses: actions/upload-artifact@v4
         with:
@@ -120,7 +120,7 @@ jobs:
           if-no-files-found: error
 
       # Submit installer to SignPath (Stage 2)
-      - name: Optikey Pro: Submit installer for signing (Stage 2)
+      - name: Optikey Pro Submit installer for signing (Stage 2)
         id: sign-installer-pro
         uses: signpath/github-action-submit-signing-request@v2
         with:
@@ -134,7 +134,7 @@ jobs:
           output-artifact-directory: 'installer-signed'
 
       # Upload the signed installer as a GitHub artifact
-      - name: Optikey Pro: Upload signed installer
+      - name: Optikey Pro Upload signed installer
         uses: actions/upload-artifact@v4
         with:
           name: optikey-pro-installer-signed
@@ -142,7 +142,7 @@ jobs:
           if-no-files-found: error
 
       # Verify final installer signature
-      - name: Optikey Pro: Verify installer signature
+      - name: Optikey Pro Verify installer signature
         shell: pwsh
         run: |
           $sig = Get-AuthenticodeSignature "installer-signed\OptiKeyPro.exe"
@@ -153,7 +153,7 @@ jobs:
       # ============================================================
 
       # Create a GitHub release with the signed installer (only for tagged releases)
-      - name: Optikey Pro: Publish signed installer to GitHub Release
+      - name: Optikey Pro Publish signed installer to GitHub Release
         if: startsWith(github.ref, 'refs/tags/')
         uses: softprops/action-gh-release@v2
         with:
@@ -177,7 +177,7 @@ jobs:
       # ============================================================
 
       # Upload unsigned application executable
-      - name: Optikey Chat: Upload unsigned application EXE
+      - name: Optikey Chat Upload unsigned application EXE
         id: upload-unsigned-app-chat
         uses: actions/upload-artifact@v4
         with:
@@ -186,7 +186,7 @@ jobs:
           if-no-files-found: error
 
       # Submit application EXE to SignPath (Stage 1)
-      - name: Optikey Chat: Submit application EXE for signing (Stage 1)
+      - name: Optikey Chat Submit application EXE for signing (Stage 1)
         id: sign-application-chat
         uses: signpath/github-action-submit-signing-request@v2
         with:
@@ -200,7 +200,7 @@ jobs:
           output-artifact-directory: 'app-signed'
 
       # Copy signed EXE back to build output
-      - name: Optikey Chat: Copy signed EXE to build output
+      - name: Optikey Chat Copy signed EXE to build output
         shell: pwsh
         run: |
           $releaseDir = "src\JuliusSweetland.OptiKey.Chat\bin\x64\Release"
@@ -216,7 +216,7 @@ jobs:
       # ============================================================
 
       # Setup Advanced Installer
-      - name: Optikey Chat: Setup Advanced Installer
+      - name: Optikey Chat Setup Advanced Installer
         uses: caphyon/advinst-github-action@main
         with:
           advinst-version: '21.4'
@@ -224,7 +224,7 @@ jobs:
           advinst-enable-automation: 'true'
 
       # Build installer with signed application EXE
-      - name: Optikey Chat: Build installer with signed EXE
+      - name: Optikey Chat Build installer with signed EXE
         shell: pwsh
         run: |
           # Set repository path
@@ -244,7 +244,7 @@ jobs:
           Write-Host "Installer build completed successfully"
 
       # Upload unsigned installer (contains signed app EXE)
-      - name: Optikey Chat: Upload unsigned installer
+      - name: Optikey Chat Upload unsigned installer
         id: upload-unsigned-installer-chat
         uses: actions/upload-artifact@v4
         with:
@@ -253,7 +253,7 @@ jobs:
           if-no-files-found: error
 
       # Submit installer to SignPath (Stage 2)
-      - name: Optikey Chat: Submit installer for signing (Stage 2)
+      - name: Optikey Chat Submit installer for signing (Stage 2)
         id: sign-installer-chat
         uses: signpath/github-action-submit-signing-request@v2
         with:
@@ -267,7 +267,7 @@ jobs:
           output-artifact-directory: 'installer-signed'
 
       # Upload the signed installer as a GitHub artifact
-      - name: Optikey Chat: Upload signed installer
+      - name: Optikey Chat Upload signed installer
         uses: actions/upload-artifact@v4
         with:
           name: optikey-chat-installer-signed
@@ -275,7 +275,7 @@ jobs:
           if-no-files-found: error
 
       # Verify final installer signature
-      - name: Optikey Chat: Verify installer signature
+      - name: Optikey Chat Verify installer signature
         shell: pwsh
         run: |
           $sig = Get-AuthenticodeSignature "installer-signed\OptiKeyChat.exe"
@@ -286,7 +286,7 @@ jobs:
       # ============================================================
 
       # Create a GitHub release with the signed installer (only for tagged releases)
-      - name: Optikey Chat: Publish signed installer to GitHub Release
+      - name: Optikey Chat Publish signed installer to GitHub Release
         if: startsWith(github.ref, 'refs/tags/')
         uses: softprops/action-gh-release@v2
         with:
@@ -310,7 +310,7 @@ jobs:
       # ============================================================
 
       # Upload unsigned application executable
-      - name: Optikey Symbol: Upload unsigned application EXE
+      - name: Optikey Symbol Upload unsigned application EXE
         id: upload-unsigned-app-symbol
         uses: actions/upload-artifact@v4
         with:
@@ -319,7 +319,7 @@ jobs:
           if-no-files-found: error
 
       # Submit application EXE to SignPath (Stage 1)
-      - name: Optikey Symbol: Submit application EXE for signing (Stage 1)
+      - name: Optikey Symbol Submit application EXE for signing (Stage 1)
         id: sign-application-symbol
         uses: signpath/github-action-submit-signing-request@v2
         with:
@@ -333,7 +333,7 @@ jobs:
           output-artifact-directory: 'app-signed'
 
       # Copy signed EXE back to build output
-      - name: Optikey Symbol: Copy signed EXE to build output
+      - name: Optikey Symbol Copy signed EXE to build output
         shell: pwsh
         run: |
           $releaseDir = "src\JuliusSweetland.OptiKey.Symbol\bin\x64\Release"
@@ -349,7 +349,7 @@ jobs:
       # ============================================================
 
       # Setup Advanced Installer
-      - name: Optikey Symbol: Setup Advanced Installer
+      - name: Optikey Symbol Setup Advanced Installer
         uses: caphyon/advinst-github-action@main
         with:
           advinst-version: '21.4'
@@ -357,7 +357,7 @@ jobs:
           advinst-enable-automation: 'true'
 
       # Build installer with signed application EXE
-      - name: Optikey Symbol: Build installer with signed EXE
+      - name: Optikey Symbol Build installer with signed EXE
         shell: pwsh
         run: |
           # Set repository path
@@ -377,7 +377,7 @@ jobs:
           Write-Host "Installer build completed successfully"
 
       # Upload unsigned installer (contains signed app EXE)
-      - name: Optikey Symbol: Upload unsigned installer
+      - name: Optikey Symbol Upload unsigned installer
         id: upload-unsigned-installer-symbol
         uses: actions/upload-artifact@v4
         with:
@@ -386,7 +386,7 @@ jobs:
           if-no-files-found: error
 
       # Submit installer to SignPath (Stage 2)
-      - name: Optikey Symbol: Submit installer for signing (Stage 2)
+      - name: Optikey Symbol Submit installer for signing (Stage 2)
         id: sign-installer-symbol
         uses: signpath/github-action-submit-signing-request@v2
         with:
@@ -400,7 +400,7 @@ jobs:
           output-artifact-directory: 'installer-signed'
 
       # Upload the signed installer as a GitHub artifact
-      - name: Optikey Symbol: Upload signed installer
+      - name: Optikey Symbol Upload signed installer
         uses: actions/upload-artifact@v4
         with:
           name: optikey-symbol-installer-signed
@@ -408,7 +408,7 @@ jobs:
           if-no-files-found: error
 
       # Verify final installer signature
-      - name: Optikey Symbol: Verify installer signature
+      - name: Optikey Symbol Verify installer signature
         shell: pwsh
         run: |
           $sig = Get-AuthenticodeSignature "installer-signed\OptiKeySymbol.exe"
@@ -419,7 +419,7 @@ jobs:
       # ============================================================
 
       # Create a GitHub release with the signed installer (only for tagged releases)
-      - name: Optikey Symbol: Publish signed installer to GitHub Release
+      - name: Optikey Symbol Publish signed installer to GitHub Release
         if: startsWith(github.ref, 'refs/tags/')
         uses: softprops/action-gh-release@v2
         with:
@@ -443,7 +443,7 @@ jobs:
       # ============================================================
 
       # Upload unsigned application executable
-      - name: Optikey Mouse: Upload unsigned application EXE
+      - name: Optikey Mouse Upload unsigned application EXE
         id: upload-unsigned-app-mouse
         uses: actions/upload-artifact@v4
         with:
@@ -452,7 +452,7 @@ jobs:
           if-no-files-found: error
 
       # Submit application EXE to SignPath (Stage 1)
-      - name: Optikey Mouse: Submit application EXE for signing (Stage 1)
+      - name: Optikey Mouse Submit application EXE for signing (Stage 1)
         id: sign-application-mouse
         uses: signpath/github-action-submit-signing-request@v2
         with:
@@ -466,7 +466,7 @@ jobs:
           output-artifact-directory: 'app-signed'
 
       # Copy signed EXE back to build output
-      - name: Optikey Mouse: Copy signed EXE to build output
+      - name: Optikey Mouse Copy signed EXE to build output
         shell: pwsh
         run: |
           $releaseDir = "src\JuliusSweetland.OptiKey.Mouse\bin\x64\Release"
@@ -482,7 +482,7 @@ jobs:
       # ============================================================
 
       # Setup Advanced Installer
-      - name: Optikey Mouse: Setup Advanced Installer
+      - name: Optikey Mouse Setup Advanced Installer
         uses: caphyon/advinst-github-action@main
         with:
           advinst-version: '21.4'
@@ -490,7 +490,7 @@ jobs:
           advinst-enable-automation: 'true'
 
       # Build installer with signed application EXE
-      - name: Optikey Mouse: Build installer with signed EXE
+      - name: Optikey Mouse Build installer with signed EXE
         shell: pwsh
         run: |
           # Set repository path
@@ -510,7 +510,7 @@ jobs:
           Write-Host "Installer build completed successfully"
 
       # Upload unsigned installer (contains signed app EXE)
-      - name: Optikey Mouse: Upload unsigned installer
+      - name: Optikey Mouse Upload unsigned installer
         id: upload-unsigned-installer-mouse
         uses: actions/upload-artifact@v4
         with:
@@ -519,7 +519,7 @@ jobs:
           if-no-files-found: error
 
       # Submit installer to SignPath (Stage 2)
-      - name: Optikey Mouse: Submit installer for signing (Stage 2)
+      - name: Optikey Mouse Submit installer for signing (Stage 2)
         id: sign-installer-mouse
         uses: signpath/github-action-submit-signing-request@v2
         with:
@@ -533,7 +533,7 @@ jobs:
           output-artifact-directory: 'installer-signed'
 
       # Upload the signed installer as a GitHub artifact
-      - name: Optikey Mouse: Upload signed installer
+      - name: Optikey Mouse Upload signed installer
         uses: actions/upload-artifact@v4
         with:
           name: optikey-mouse-installer-signed
@@ -541,7 +541,7 @@ jobs:
           if-no-files-found: error
 
       # Verify final installer signature
-      - name: Optikey Mouse: Verify installer signature
+      - name: Optikey Mouse Verify installer signature
         shell: pwsh
         run: |
           $sig = Get-AuthenticodeSignature "installer-signed\OptiKeyMouse.exe"
@@ -552,7 +552,7 @@ jobs:
       # ============================================================
 
       # Create a GitHub release with the signed installer (only for tagged releases)
-      - name: Optikey Mouse: Publish signed installer to GitHub Release
+      - name: Optikey Mouse Publish signed installer to GitHub Release
         if: startsWith(github.ref, 'refs/tags/')
         uses: softprops/action-gh-release@v2
         with:
