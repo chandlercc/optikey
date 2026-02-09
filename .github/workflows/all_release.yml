@@ -91,7 +91,7 @@ jobs:
           advinst-enable-automation: 'true'
 
       # Build installer with signed application EXE
-      - name: Optikey Pro: Build installer with signed EXE
+      - name: Optikey Pro Build installer with signed EXE
         shell: pwsh
         run: |
           # Set repository path
