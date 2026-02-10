@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SignPath Batch Artifact Configuration for All OptiKey Applications (Stage 1)
+
+  This configuration signs all 4 OptiKey application executables in a single signing request:
+  - OptikeyPro.exe
+  - OptikeyChat.exe
+  - OptikeyMouse.exe
+  - OptikeySymbol.exe
+
+  This is Stage 1 of the two-stage signing process.
+  Reduces manual approvals from 4 individual requests to 1 batch request.
+
+  GitHub Actions packages artifacts as ZIP files, so the root element must be <zip-file>.
+-->
+<artifact-configuration xmlns="http://signpath.io/artifact-configuration/v1">
+  <zip-file>
+    <pe-file path="OptikeyPro.exe">
+      <authenticode-sign/>
+    </pe-file>
+    <pe-file path="OptikeyChat.exe">
+      <authenticode-sign/>
+    </pe-file>
+    <pe-file path="OptikeyMouse.exe">
+      <authenticode-sign/>
+    </pe-file>
+    <pe-file path="OptikeySymbol.exe">
+      <authenticode-sign/>
+    </pe-file>
+  </zip-file>
+</artifact-configuration>

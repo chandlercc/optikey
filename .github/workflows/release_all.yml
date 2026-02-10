@@ -1,0 +1,207 @@
+name: OptiKey - Build, Sign, and Release All Variants
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+jobs:
+  build-sign-release:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Print ref
+        run: echo "github.ref is ${{ github.ref }}"
+
+      # ============================================================
+      # BUILD ALL APPLICATIONS AT ONCE
+      # ============================================================
+
+      - name: NuGet restore
+        shell: pwsh
+        run: nuget restore .\OptiKeyDeployment.sln -NonInteractive
+
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v2
+
+      - name: Build all unsigned applications
+        run: msbuild OptiKeyDeployment.sln /m /t:Rebuild /p:Configuration=Release /p:Platform=x64
+
+      # Setup Advanced Installer (used later for all installers)
+      - name: Setup Advanced Installer
+        uses: caphyon/advinst-github-action@main
+        with:
+          advinst-version: '21.4'
+          advinst-license: ${{ secrets.ADVINST_LICENSE_KEY }}
+          advinst-enable-automation: 'true'
+
+      - name: Set Advanced Installer repository path
+        shell: pwsh
+        run: |
+          $repoPath = Join-Path ${{ github.workspace }} "installer"
+          Write-Host "Setting repository path to: $repoPath"
+          AdvancedInstaller.com /SetRepositoryPath "$repoPath"
+          if ($LASTEXITCODE -ne 0) {
+            throw "Failed to set repository path"
+          }
+
+      # ============================================================
+      # STAGE 1 - BATCH APPLICATION SIGNING (1 APPROVAL)
+      # ============================================================
+
+      - name: Package all unsigned applications for batch signing
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force -Path "batch-signing"
+          Copy-Item "src/JuliusSweetland.OptiKey.Pro/bin/x64/Release/OptikeyPro.exe" "batch-signing/"
+          Copy-Item "src/JuliusSweetland.OptiKey.Chat/bin/x64/Release/OptikeyChat.exe" "batch-signing/"
+          Copy-Item "src/JuliusSweetland.OptiKey.Mouse/bin/x64/Release/OptikeyMouse.exe" "batch-signing/"
+          Copy-Item "src/JuliusSweetland.OptiKey.Symbol/bin/x64/Release/OptikeySymbol.exe" "batch-signing/"
+          Write-Host "Packaged all 4 applications for batch signing"
+
+      - name: Upload batch of unsigned applications
+        id: upload-unsigned-apps-batch
+        uses: actions/upload-artifact@v4
+        with:
+          name: optikey-all-apps-unsigned
+          path: batch-signing/
+          if-no-files-found: error
+
+      - name: Sign all applications in batch (Stage 1)
+        id: sign-apps-batch
+        uses: signpath/github-action-submit-signing-request@v2
+        with:
+          api-token: '${{ secrets.SIGNPATH_API_TOKEN }}'
+          organization-id: '1f9940a3-1cdf-4429-a544-76ee316b7255'
+          project-slug: 'OptiKey'
+          artifact-configuration-slug: 'OptikeyAllApps'
+          signing-policy-slug: 'test-signing'
+          github-artifact-id: '${{ steps.upload-unsigned-apps-batch.outputs.artifact-id }}'
+          wait-for-completion: true
+          output-artifact-directory: 'apps-signed-batch'
+
+      - name: Copy signed applications back to build directories
+        shell: pwsh
+        run: |
+          Copy-Item "apps-signed-batch/OptikeyPro.exe" "src/JuliusSweetland.OptiKey.Pro/bin/x64/Release/OptikeyPro.exe" -Force
+          Copy-Item "apps-signed-batch/OptikeyChat.exe" "src/JuliusSweetland.OptiKey.Chat/bin/x64/Release/OptikeyChat.exe" -Force
+          Copy-Item "apps-signed-batch/OptikeyMouse.exe" "src/JuliusSweetland.OptiKey.Mouse/bin/x64/Release/OptikeyMouse.exe" -Force
+          Copy-Item "apps-signed-batch/OptikeySymbol.exe" "src/JuliusSweetland.OptiKey.Symbol/bin/x64/Release/OptikeySymbol.exe" -Force
+
+          # Verify all signatures
+          Write-Host "`nVerifying application signatures:"
+          $apps = @(
+            "src/JuliusSweetland.OptiKey.Pro/bin/x64/Release/OptikeyPro.exe",
+            "src/JuliusSweetland.OptiKey.Chat/bin/x64/Release/OptikeyChat.exe",
+            "src/JuliusSweetland.OptiKey.Mouse/bin/x64/Release/OptikeyMouse.exe",
+            "src/JuliusSweetland.OptiKey.Symbol/bin/x64/Release/OptikeySymbol.exe"
+          )
+          foreach ($app in $apps) {
+            $sig = Get-AuthenticodeSignature $app
+            Write-Host "  $([System.IO.Path]::GetFileName($app)): $($sig.Status)"
+          }
+
+      # ============================================================
+      # BUILD ALL INSTALLERS (with signed apps)
+      # ============================================================
+
+      - name: Build Pro installer
+        shell: pwsh
+        run: |
+          Write-Host "Building OptiKeyPro installer..."
+          AdvancedInstaller.com /build "${{ github.workspace }}\installer\OptiKeyPro.aip"
+          if ($LASTEXITCODE -ne 0) { throw "Failed to build Pro installer" }
+
+      - name: Build Chat installer
+        shell: pwsh
+        run: |
+          Write-Host "Building OptiKeyChat installer..."
+          AdvancedInstaller.com /build "${{ github.workspace }}\installer\OptiKeyChat.aip"
+          if ($LASTEXITCODE -ne 0) { throw "Failed to build Chat installer" }
+
+      - name: Build Mouse installer
+        shell: pwsh
+        run: |
+          Write-Host "Building OptiKeyMouse installer..."
+          AdvancedInstaller.com /build "${{ github.workspace }}\installer\OptiKeyMouse.aip"
+          if ($LASTEXITCODE -ne 0) { throw "Failed to build Mouse installer" }
+
+      - name: Build Symbol installer
+        shell: pwsh
+        run: |
+          Write-Host "Building OptiKeySymbol installer..."
+          AdvancedInstaller.com /build "${{ github.workspace }}\installer\OptiKeySymbol.aip"
+          if ($LASTEXITCODE -ne 0) { throw "Failed to build Symbol installer" }
+
+      # ============================================================
+      # STAGE 2 - BATCH INSTALLER SIGNING (1 APPROVAL)
+      # ============================================================
+
+      - name: Package all unsigned installers for batch signing
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force -Path "installer-batch-signing"
+          Copy-Item "installer/SetupFiles/OptiKeyPro.exe" "installer-batch-signing/"
+          Copy-Item "installer/SetupFiles/OptiKeyChat.exe" "installer-batch-signing/"
+          Copy-Item "installer/SetupFiles/OptiKeyMouse.exe" "installer-batch-signing/"
+          Copy-Item "installer/SetupFiles/OptiKeySymbol.exe" "installer-batch-signing/"
+          Write-Host "Packaged all 4 installers for batch signing"
+
+      - name: Upload batch of unsigned installers
+        id: upload-unsigned-installers-batch
+        uses: actions/upload-artifact@v4
+        with:
+          name: optikey-all-installers-unsigned
+          path: installer-batch-signing/
+          if-no-files-found: error
+
+      - name: Sign all installers in batch (Stage 2)
+        id: sign-installers-batch
+        uses: signpath/github-action-submit-signing-request@v2
+        with:
+          api-token: '${{ secrets.SIGNPATH_API_TOKEN }}'
+          organization-id: '1f9940a3-1cdf-4429-a544-76ee316b7255'
+          project-slug: 'OptiKey'
+          artifact-configuration-slug: 'OptikeyAllInstallers'
+          signing-policy-slug: 'test-signing'
+          github-artifact-id: '${{ steps.upload-unsigned-installers-batch.outputs.artifact-id }}'
+          wait-for-completion: true
+          output-artifact-directory: 'installers-signed-batch'
+
+      - name: Prepare signed installers for release
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force -Path "final-installers"
+          Copy-Item "installers-signed-batch/OptiKeyPro.exe" "final-installers/"
+          Copy-Item "installers-signed-batch/OptiKeyChat.exe" "final-installers/"
+          Copy-Item "installers-signed-batch/OptiKeyMouse.exe" "final-installers/"
+          Copy-Item "installers-signed-batch/OptiKeySymbol.exe" "final-installers/"
+
+          # Verify all installer signatures
+          Write-Host "`nVerifying installer signatures:"
+          Get-ChildItem "final-installers/*.exe" | ForEach-Object {
+            $sig = Get-AuthenticodeSignature $_
+            Write-Host "  $($_.Name): $($sig.Status)"
+          }
+
+      # ============================================================
+      # CREATE GITHUB RELEASE WITH ALL 4 INSTALLERS
+      # ============================================================
+
+      - name: Upload all signed installers to GitHub Release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            final-installers/OptiKeyPro.exe
+            final-installers/OptiKeyChat.exe
+            final-installers/OptiKeyMouse.exe
+            final-installers/OptiKeySymbol.exe
+          draft: true
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
