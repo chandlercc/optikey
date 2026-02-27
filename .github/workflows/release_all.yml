@@ -79,7 +79,7 @@ jobs:
           organization-id: '1f9940a3-1cdf-4429-a544-76ee316b7255'
           project-slug: 'OptiKey'
           artifact-configuration-slug: 'OptikeyAllApps'
-          signing-policy-slug: 'test-signing'
+          signing-policy-slug: 'release-signing'
           github-artifact-id: '${{ steps.upload-unsigned-apps-batch.outputs.artifact-id }}'
           wait-for-completion: true
           output-artifact-directory: 'apps-signed-batch'
@@ -167,7 +167,7 @@ jobs:
           organization-id: '1f9940a3-1cdf-4429-a544-76ee316b7255'
           project-slug: 'OptiKey'
           artifact-configuration-slug: 'OptikeyAllInstallers'
-          signing-policy-slug: 'test-signing'
+          signing-policy-slug: 'release-signing'
           github-artifact-id: '${{ steps.upload-unsigned-installers-batch.outputs.artifact-id }}'
           wait-for-completion: true
           output-artifact-directory: 'installers-signed-batch'
