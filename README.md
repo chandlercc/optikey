@@ -37,5 +37,4 @@ To ask a question, or to discuss information that is not on the [**OptiKey Wiki*
 
 # Sponsors 
 
-**SignPath**  
 ![SignPath.io logo](https://avatars.githubusercontent.com/u/34448643?s=48&v=4)Free code signing on Windows provided by [**SignPath.io**](http://SignPath.io), certificate by [**SignPath Foundation**](https://signpath.org/)  
