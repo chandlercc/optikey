@@ -33,3 +33,9 @@ Contributions to this project are always welcome. If you'd like to help translat
 # Contact
 
 To ask a question, or to discuss information that is not on the [**OptiKey Wiki**](https://github.com/JuliusSweetland/OptiKey/wiki/), please use <julius@optikey.org> or <optikeyfeedback@gmail.com> to contact Julius.
+
+
+# Sponsors 
+
+**SignPath**  
+![SignPath.io logo](https://avatars.githubusercontent.com/u/34448643?s=48&v=4)Free code signing on Windows provided by [**SignPath.io**](http://SignPath.io), certificate by [**SignPath Foundation**](https://signpath.org/)  
