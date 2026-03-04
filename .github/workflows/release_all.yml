@@ -74,7 +74,6 @@ jobs:
       - name: Sign all applications in batch (Stage 1)
         id: sign-apps-batch
         uses: signpath/github-action-submit-signing-request@v2
-        timeout-minutes: 360 # 6 hours is the GitHub's job limit
         with:
           api-token: '${{ secrets.SIGNPATH_API_TOKEN }}'
           organization-id: '1f9940a3-1cdf-4429-a544-76ee316b7255'
@@ -163,7 +162,6 @@ jobs:
       - name: Sign all installers in batch (Stage 2)
         id: sign-installers-batch
         uses: signpath/github-action-submit-signing-request@v2
-        timeout-minutes: 360 # 6 hours is the GitHub's job limit
         with:
           api-token: '${{ secrets.SIGNPATH_API_TOKEN }}'
           organization-id: '1f9940a3-1cdf-4429-a544-76ee316b7255'
