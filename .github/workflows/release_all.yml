@@ -188,6 +188,13 @@ jobs:
             Write-Host "  $($_.Name): $($sig.Status)"
           }
 
+      - name: Upload signed installers as artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: optikey-all-installers-signed
+          path: final-installers/
+          if-no-files-found: error
+
       # ============================================================
       # CREATE GITHUB RELEASE WITH ALL 4 INSTALLERS
       # ============================================================
