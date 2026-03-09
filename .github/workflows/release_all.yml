@@ -5,6 +5,12 @@ on:
     tags:
       - "v*"
   workflow_dispatch:
+    inputs:
+      force-run-on-any-sha:
+        description: 'Skip version-tag check and run on any branch/SHA (no GitHub Release created)'
+        type: boolean
+        default: false
+        required: false
 
 jobs:
   build-sign-release:
@@ -16,6 +22,31 @@ jobs:
 
       - name: Print ref
         run: echo "github.ref is ${{ github.ref }}"
+
+      - name: Validate ref is a version tag
+        shell: pwsh
+        run: |
+          $ref = "${{ github.ref }}"
+          $isVersionTag = $ref -match '^refs/tags/v'
+          $forceOverride = "${{ inputs.force-run-on-any-sha }}" -eq "true"
+
+          if (-not $isVersionTag -and -not $forceOverride) {             
+            $annotation =  "This workflow must be triggered on a version tag (e.g. v3.0.0) so that%0A" +
+              "signed installers are uploaded to a GitHub Release. Running on a branch%0A" +
+              "will build and sign everything, then silently skip the release upload step.%0A%0A" +
+              "Current ref: $ref%0A%0A" +
+              "TO RUN A RELEASE:%0A" +
+              "  Actions -> Run workflow -> select the TAG (e.g. v3.0.0)%0A" +
+              "  from the branch/tag dropdown, NOT 'main'.%0A%0A" +
+              "TO OVERRIDE (for testing or manual release upload):%0A" +
+              "  Set 'force-run-on-any-sha' input to true."
+            Write-Host "::error title=WORKFLOW BLOCKED - must run on a version tag::$annotation"
+            exit 1
+          }
+
+          if ($forceOverride -and -not $isVersionTag) {
+            Write-Host "::warning title=force-run-on-any-sha enabled::Running on '$ref' - signed installers will NOT be uploaded to a GitHub Release."
+          }
 
       # ============================================================
       # BUILD ALL APPLICATIONS AT ONCE
@@ -35,7 +66,7 @@ jobs:
       - name: Setup Advanced Installer
         uses: caphyon/advinst-github-action@main
         with:
-          advinst-version: '21.5.1'
+          advinst-version: '21.4'
           advinst-license: ${{ secrets.ADVINST_LICENSE_KEY }}
           advinst-enable-automation: 'true'
 
@@ -79,7 +110,7 @@ jobs:
           organization-id: '1f9940a3-1cdf-4429-a544-76ee316b7255'
           project-slug: 'OptiKey'
           artifact-configuration-slug: 'OptikeyAllApps'
-          signing-policy-slug: 'release-signing'
+          signing-policy-slug: 'test-signing'
           github-artifact-id: '${{ steps.upload-unsigned-apps-batch.outputs.artifact-id }}'
           wait-for-completion: true
           output-artifact-directory: 'apps-signed-batch'
@@ -167,7 +198,7 @@ jobs:
           organization-id: '1f9940a3-1cdf-4429-a544-76ee316b7255'
           project-slug: 'OptiKey'
           artifact-configuration-slug: 'OptikeyAllInstallers'
-          signing-policy-slug: 'release-signing'
+          signing-policy-slug: 'test-signing'
           github-artifact-id: '${{ steps.upload-unsigned-installers-batch.outputs.artifact-id }}'
           wait-for-completion: true
           output-artifact-directory: 'installers-signed-batch'
