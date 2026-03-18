@@ -1,0 +1,144 @@
+name: OptiKey - Build Unsigned (no signing)
+
+# Use this workflow to verify the build pipeline without needing SignPath approval.
+# Produces unsigned installer EXEs and uploads them as a GitHub artifact.
+
+on:
+  workflow_dispatch:
+    inputs:
+      variants:
+        description: 'Variants to build (comma-separated: Pro,Chat,Mouse,Symbol)'
+        default: 'Pro,Chat,Mouse,Symbol'
+        required: false
+
+jobs:
+  build-unsigned:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # ============================================================
+      # BUILD ALL APPLICATIONS
+      # ============================================================
+
+      - name: NuGet restore
+        shell: pwsh
+        run: nuget restore .\OptiKeyDeployment.sln -NonInteractive
+
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v2
+
+      - name: Build all applications (unsigned)
+        run: msbuild OptiKeyDeployment.sln /m /t:Rebuild /p:Configuration=Release /p:Platform=x64
+
+      - name: Log application binaries
+        shell: pwsh
+        run: |
+          $apps = @(
+            "src/JuliusSweetland.OptiKey.Pro/bin/x64/Release/OptikeyPro.exe",
+            "src/JuliusSweetland.OptiKey.Chat/bin/x64/Release/OptikeyChat.exe",
+            "src/JuliusSweetland.OptiKey.Mouse/bin/x64/Release/OptikeyMouse.exe",
+            "src/JuliusSweetland.OptiKey.Symbol/bin/x64/Release/OptikeySymbol.exe"
+          )
+          Write-Host "Application binaries:"
+          foreach ($app in $apps) {
+            if (Test-Path $app) {
+              $info = Get-Item $app
+              $sig  = Get-AuthenticodeSignature $app
+              Write-Host ("  [OK]   {0,-35} {1,6}KB  sig={2}" -f $info.Name, [math]::Round($info.Length/1KB), $sig.Status)
+            } else {
+              Write-Host "  [MISS] $app" -ForegroundColor Red
+            }
+          }
+
+      # ============================================================
+      # BUILD ALL INSTALLERS
+      # ============================================================
+
+      - name: Setup Advanced Installer
+        uses: caphyon/advinst-github-action@main
+        with:
+          advinst-version: '21.5.1'
+          advinst-license: ${{ secrets.ADVINST_LICENSE_KEY }}
+          advinst-enable-automation: 'true'
+
+      - name: Set Advanced Installer repository path
+        shell: pwsh
+        run: |
+          $repoPath = Join-Path ${{ github.workspace }} "installer"
+          Write-Host "Setting repository path to: $repoPath"
+          AdvancedInstaller.com /SetRepositoryPath "$repoPath"
+          if ($LASTEXITCODE -ne 0) { throw "Failed to set repository path" }
+
+      - name: Build Pro installer
+        shell: pwsh
+        run: |
+          AdvancedInstaller.com /build "${{ github.workspace }}\installer\OptiKeyPro.aip"
+          if ($LASTEXITCODE -ne 0) { throw "Failed to build Pro installer" }
+
+      - name: Build Chat installer
+        shell: pwsh
+        run: |
+          AdvancedInstaller.com /build "${{ github.workspace }}\installer\OptiKeyChat.aip"
+          if ($LASTEXITCODE -ne 0) { throw "Failed to build Chat installer" }
+
+      - name: Build Mouse installer
+        shell: pwsh
+        run: |
+          AdvancedInstaller.com /build "${{ github.workspace }}\installer\OptiKeyMouse.aip"
+          if ($LASTEXITCODE -ne 0) { throw "Failed to build Mouse installer" }
+
+      - name: Build Symbol installer
+        shell: pwsh
+        run: |
+          AdvancedInstaller.com /build "${{ github.workspace }}\installer\OptiKeySymbol.aip"
+          if ($LASTEXITCODE -ne 0) { throw "Failed to build Symbol installer" }
+
+      # ============================================================
+      # LOG RESULTS
+      # ============================================================
+
+      - name: Log installer outputs
+        shell: pwsh
+        run: |
+          $setupFiles = "${{ github.workspace }}\installer\SetupFiles"
+
+          Write-Host ""
+          Write-Host "=== All files in installer\SetupFiles ==="
+          if (Test-Path $setupFiles) {
+            Get-ChildItem $setupFiles | Sort-Object Name | ForEach-Object {
+              $sig = Get-AuthenticodeSignature $_.FullName
+              Write-Host ("  {0,-45} {1,7}KB  sig={2}" -f $_.Name, [math]::Round($_.Length/1KB), $sig.Status)
+            }
+          } else {
+            Write-Host "  [MISS] SetupFiles directory not found"
+          }
+
+          Write-Host ""
+          Write-Host "=== Expected installer EXEs ==="
+          $expected = @("OptiKeyPro.exe","OptiKeyChat.exe","OptiKeyMouse.exe","OptiKeySymbol.exe")
+          $allOk = $true
+          foreach ($name in $expected) {
+            $path = Join-Path $setupFiles $name
+            if (Test-Path $path) {
+              $info = Get-Item $path
+              $sig  = Get-AuthenticodeSignature $path
+              Write-Host ("  [OK]   {0,-35} {1,6}MB  sig={2}" -f $name, [math]::Round($info.Length/1MB,1), $sig.Status)
+            } else {
+              Write-Host "  [MISS] $name"
+              $allOk = $false
+            }
+          }
+
+          if (-not $allOk) {
+            Write-Host "::warning::One or more expected installer EXEs are missing from SetupFiles"
+          }
+
+      - name: Upload unsigned installers as artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: optikey-all-installers-unsigned
+          path: installer/SetupFiles/*.exe
+          if-no-files-found: warn
