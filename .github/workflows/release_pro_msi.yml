@@ -1,0 +1,190 @@
+name: OptiKey Pro - Build, Sign, and Release (MSI)
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+    inputs:
+      force-run-on-any-sha:
+        description: 'Skip version-tag check and run on any branch/SHA (no GitHub Release created)'
+        type: boolean
+        default: false
+        required: false
+
+jobs:
+  build-sign-release:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Print ref
+        run: echo "github.ref is ${{ github.ref }}"
+
+      - name: Validate ref is a version tag
+        shell: pwsh
+        run: |
+          $ref = "${{ github.ref }}"
+          $isVersionTag = $ref -match '^refs/tags/v'
+          $forceOverride = "${{ inputs.force-run-on-any-sha }}" -eq "true"
+
+          if (-not $isVersionTag -and -not $forceOverride) {
+            $annotation =  "This workflow must be triggered on a version tag (e.g. v3.0.0) so that%0A" +
+              "the signed MSI installer is uploaded to a GitHub Release. Running on a branch%0A" +
+              "will build and sign everything, then silently skip the release upload step.%0A%0A" +
+              "Current ref: $ref%0A%0A" +
+              "TO RUN A RELEASE:%0A" +
+              "  Actions -> Run workflow -> select the TAG (e.g. v3.0.0)%0A" +
+              "  from the branch/tag dropdown, NOT 'main'.%0A%0A" +
+              "TO OVERRIDE (for testing or manual release upload):%0A" +
+              "  Set 'force-run-on-any-sha' input to true."
+            Write-Host "::error title=WORKFLOW BLOCKED - must run on a version tag::$annotation"
+            exit 1
+          }
+
+          if ($forceOverride -and -not $isVersionTag) {
+            Write-Host "::warning title=force-run-on-any-sha enabled::Running on '$ref' - signed MSI will NOT be uploaded to a GitHub Release."
+          }
+
+      # ============================================================
+      # BUILD APPLICATION
+      # ============================================================
+
+      - name: NuGet restore
+        shell: pwsh
+        run: nuget restore .\OptiKeyDeployment.sln -NonInteractive
+
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v2
+
+      - name: Build unsigned Pro application
+        run: msbuild OptiKeyDeployment.sln /m /t:Rebuild /p:Configuration=Release /p:Platform=x64
+
+      - name: Log Pro application binary
+        shell: pwsh
+        run: |
+          $app = "src/JuliusSweetland.OptiKey.Pro/bin/x64/Release/OptikeyPro.exe"
+          if (Test-Path $app) {
+            $info = Get-Item $app
+            $sig  = Get-AuthenticodeSignature $app
+            Write-Host ("  [OK]   {0,-35} {1,6}KB  sig={2}" -f $info.Name, [math]::Round($info.Length/1KB), $sig.Status)
+          } else {
+            throw "[MISS] $app not found"
+          }
+
+      # ============================================================
+      # BUILD MSI INSTALLER (with unsigned app)
+      # ============================================================
+
+      - name: Setup Advanced Installer
+        uses: caphyon/advinst-github-action@main
+        with:
+          advinst-version: '23.5.1'
+          advinst-license: ${{ secrets.ADVINST_LICENSE_KEY }}
+          advinst-enable-automation: 'true'
+
+      - name: Set Advanced Installer repository path
+        shell: pwsh
+        run: |
+          $repoPath = Join-Path ${{ github.workspace }} "installer"
+          Write-Host "Setting repository path to: $repoPath"
+          AdvancedInstaller.com /SetRepositoryPath "$repoPath"
+          if ($LASTEXITCODE -ne 0) {
+            throw "Failed to set repository path"
+          }
+
+      - name: Build Pro MSI installer
+        shell: pwsh
+        run: |
+          Write-Host "Building OptiKeyPro MSI installer..."
+          AdvancedInstaller.com /build "${{ github.workspace }}\installer\OptiKeyPro.aip"
+          if ($LASTEXITCODE -ne 0) { throw "Failed to build Pro MSI installer" }
+
+      - name: Log MSI output
+        shell: pwsh
+        run: |
+          $setupFiles = "${{ github.workspace }}\installer\SetupFiles"
+
+          Write-Host ""
+          Write-Host "=== Contents of installer\SetupFiles ==="
+          if (Test-Path $setupFiles) {
+            Get-ChildItem $setupFiles -Recurse | ForEach-Object {
+              $sig = Get-AuthenticodeSignature $_.FullName -ErrorAction SilentlyContinue
+              Write-Host ("  {0,-50} {1,7}KB  sig={2}" -f $_.Name, [math]::Round($_.Length/1KB), $sig.Status)
+            }
+          } else {
+            Write-Host "  [MISS] SetupFiles directory not found"
+          }
+
+          Write-Host ""
+          $msi = Join-Path $setupFiles "OptiKeyPro.msi"
+          if (Test-Path $msi) {
+            $info = Get-Item $msi
+            Write-Host "[OK] OptiKeyPro.msi found: $([math]::Round($info.Length/1MB, 1))MB"
+          } else {
+            Write-Host "::error::OptiKeyPro.msi not found at expected path: $msi"
+            exit 1
+          }
+
+      # ============================================================
+      # SINGLE-STAGE DEEP SIGNING (1 APPROVAL)
+      # SignPath signs OptikeyPro.exe inside the MSI, then signs the MSI itself
+      # ============================================================
+
+      - name: Upload unsigned MSI for signing
+        id: upload-unsigned-msi
+        uses: actions/upload-artifact@v4
+        with:
+          name: optikey-pro-msi-unsigned
+          path: installer/SetupFiles/OptiKeyPro.msi
+          if-no-files-found: error
+
+      - name: Deep-sign MSI (app EXE + MSI in one pass)
+        id: sign-pro-msi
+        uses: signpath/github-action-submit-signing-request@v2
+        with:
+          api-token: '${{ secrets.SIGNPATH_API_TOKEN }}'
+          organization-id: '1f9940a3-1cdf-4429-a544-76ee316b7255'
+          project-slug: 'OptiKey'
+          artifact-configuration-slug: 'OptikeyProMsi'
+          signing-policy-slug: 'test-signing'
+          github-artifact-id: '${{ steps.upload-unsigned-msi.outputs.artifact-id }}'
+          wait-for-completion: true
+          output-artifact-directory: 'msi-signed'
+
+      - name: Verify signed MSI
+        shell: pwsh
+        run: |
+          $msi = "msi-signed/OptiKeyPro.msi"
+          if (-not (Test-Path $msi)) {
+            throw "Signed MSI not found at: $msi"
+          }
+          $sig = Get-AuthenticodeSignature $msi
+          Write-Host "MSI signature status: $($sig.Status)"
+          if ($sig.Status -ne "Valid") {
+            throw "MSI signature is not valid: $($sig.Status)"
+          }
+          Write-Host "Signed by: $($sig.SignerCertificate.Subject)"
+
+      # ============================================================
+      # CREATE GITHUB RELEASE
+      # ============================================================
+
+      - name: Upload signed MSI as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: optikey-pro-msi-signed
+          path: msi-signed/OptiKeyPro.msi
+          if-no-files-found: error
+
+      - name: Upload signed MSI to GitHub Release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: msi-signed/OptiKeyPro.msi
+          draft: true
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
