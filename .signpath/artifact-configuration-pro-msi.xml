@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SignPath Deep-Sign Artifact Configuration for OptiKey Pro MSI
+
+  Single-stage signing: SignPath extracts the MSI, signs the application
+  executable inside it, rebuilds the MSI with the signed executable, then
+  signs the MSI itself. One signing request replaces the previous two-stage
+  (sign app EXE, then sign installer EXE) process.
+
+  GitHub Actions packages artifacts as ZIP files, so the root element must be <zip-file>.
+-->
+<artifact-configuration xmlns="http://signpath.io/artifact-configuration/v1">
+  <zip-file>
+    <msi-file path="OptiKeyPro.msi">
+      <pe-file path="OptikeyPro.exe">
+        <authenticode-sign/>
+      </pe-file>
+      <authenticode-sign/>
+    </msi-file>
+  </zip-file>
+</artifact-configuration>
