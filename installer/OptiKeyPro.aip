@@ -31,140 +31,76 @@
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
     <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
-    <ROW Directory="CommuniKate_1_Dir" Directory_Parent="Resources_1_Dir" DefaultDir="COMMUN~1|CommuniKate"/>
     <ROW Directory="CommuniKate_Dir" Directory_Parent="Resources_Dir" DefaultDir="COMMUN~1|CommuniKate"/>
     <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="DESKTO~1|DesktopFolder" IsPseudoRoot="1"/>
-    <ROW Directory="Dictionaries_1_Dir" Directory_Parent="Optikey2025AKv9_Dir" DefaultDir="DICTIO~1|Dictionaries"/>
     <ROW Directory="Dictionaries_Dir" Directory_Parent="Release_Dir" DefaultDir="DICTIO~1|Dictionaries"/>
-    <ROW Directory="EyeGestures_1_Dir" Directory_Parent="Resources_1_Dir" DefaultDir="EYEGES~1|EyeGestures"/>
     <ROW Directory="EyeGestures_Dir" Directory_Parent="Resources_Dir" DefaultDir="EYEGES~1|EyeGestures"/>
-    <ROW Directory="EyeTrackerSupport_1_Dir" Directory_Parent="Resources_1_Dir" DefaultDir="EYETRA~1|EyeTrackerSupport"/>
     <ROW Directory="EyeTrackerSupport_Dir" Directory_Parent="Resources_Dir" DefaultDir="EYETRA~1|EyeTrackerSupport"/>
-    <ROW Directory="Fonts_1_Dir" Directory_Parent="Resources_1_Dir" DefaultDir="Fonts"/>
     <ROW Directory="Fonts_Dir" Directory_Parent="Resources_Dir" DefaultDir="Fonts"/>
-    <ROW Directory="Keyboards_1_Dir" Directory_Parent="Resources_1_Dir" DefaultDir="KEYBOA~1|Keyboards"/>
     <ROW Directory="Keyboards_Dir" Directory_Parent="Resources_Dir" DefaultDir="KEYBOA~1|Keyboards"/>
-    <ROW Directory="Optikey2025AKv9_Dir" Directory_Parent="Release_Dir" DefaultDir="OPTIKE~1|Optikey-2025-AK-v9"/>
     <ROW Directory="Optikey_Dir" Directory_Parent="ProgramMenuFolder" DefaultDir="Optikey"/>
-    <ROW Directory="Plugins_1_Dir" Directory_Parent="Resources_1_Dir" DefaultDir="Plugins"/>
     <ROW Directory="Plugins_Dir" Directory_Parent="Resources_Dir" DefaultDir="Plugins"/>
-    <ROW Directory="Presage_1_Dir" Directory_Parent="Resources_1_Dir" DefaultDir="Presage"/>
     <ROW Directory="Presage_Dir" Directory_Parent="Resources_Dir" DefaultDir="Presage"/>
     <ROW Directory="ProgramMenuFolder" Directory_Parent="TARGETDIR" DefaultDir="PROGRA~1|ProgramMenuFolder" IsPseudoRoot="1"/>
     <ROW Directory="Release_Dir" Directory_Parent="APPDIR" DefaultDir=".:Release"/>
-    <ROW Directory="Resources_1_Dir" Directory_Parent="Optikey2025AKv9_Dir" DefaultDir="RESOUR~1|Resources"/>
     <ROW Directory="Resources_Dir" Directory_Parent="Release_Dir" DefaultDir="RESOUR~1|Resources"/>
-    <ROW Directory="Rime_1_Dir" Directory_Parent="Resources_1_Dir" DefaultDir="Rime"/>
     <ROW Directory="Rime_Dir" Directory_Parent="Resources_Dir" DefaultDir="Rime"/>
     <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
     <ROW Directory="Samples_1_Dir" Directory_Parent="Keyboards_Dir" DefaultDir="Samples"/>
-    <ROW Directory="Samples_Dir" Directory_Parent="Keyboards_1_Dir" DefaultDir="Samples"/>
-    <ROW Directory="Sounds_1_Dir" Directory_Parent="Resources_1_Dir" DefaultDir="Sounds"/>
     <ROW Directory="Sounds_Dir" Directory_Parent="Resources_Dir" DefaultDir="Sounds"/>
     <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
-    <ROW Directory="caES_1_Dir" Directory_Parent="Optikey2025AKv9_Dir" DefaultDir="ca-ES"/>
     <ROW Directory="caES_Dir" Directory_Parent="Release_Dir" DefaultDir="ca-ES"/>
-    <ROW Directory="csCZ_1_Dir" Directory_Parent="Optikey2025AKv9_Dir" DefaultDir="cs-CZ"/>
     <ROW Directory="csCZ_Dir" Directory_Parent="Release_Dir" DefaultDir="cs-CZ"/>
-    <ROW Directory="daDK_1_Dir" Directory_Parent="Optikey2025AKv9_Dir" DefaultDir="da-DK"/>
     <ROW Directory="daDK_Dir" Directory_Parent="Release_Dir" DefaultDir="da-DK"/>
-    <ROW Directory="deDE_1_Dir" Directory_Parent="Optikey2025AKv9_Dir" DefaultDir="de-DE"/>
     <ROW Directory="deDE_Dir" Directory_Parent="Release_Dir" DefaultDir="de-DE"/>
-    <ROW Directory="elGR_1_Dir" Directory_Parent="Optikey2025AKv9_Dir" DefaultDir="el-GR"/>
     <ROW Directory="elGR_Dir" Directory_Parent="Release_Dir" DefaultDir="el-GR"/>
-    <ROW Directory="enUS_1_Dir" Directory_Parent="Optikey2025AKv9_Dir" DefaultDir="en-US"/>
     <ROW Directory="enUS_Dir" Directory_Parent="Release_Dir" DefaultDir="en-US"/>
-    <ROW Directory="esES_1_Dir" Directory_Parent="Optikey2025AKv9_Dir" DefaultDir="es-ES"/>
     <ROW Directory="esES_Dir" Directory_Parent="Release_Dir" DefaultDir="es-ES"/>
-    <ROW Directory="fa_1_Dir" Directory_Parent="Optikey2025AKv9_Dir" DefaultDir="fa"/>
     <ROW Directory="fa_Dir" Directory_Parent="Release_Dir" DefaultDir="fa"/>
-    <ROW Directory="fiFI_1_Dir" Directory_Parent="Optikey2025AKv9_Dir" DefaultDir="fi-FI"/>
     <ROW Directory="fiFI_Dir" Directory_Parent="Release_Dir" DefaultDir="fi-FI"/>
-    <ROW Directory="fr_1_Dir" Directory_Parent="Optikey2025AKv9_Dir" DefaultDir="fr"/>
     <ROW Directory="fr_Dir" Directory_Parent="Release_Dir" DefaultDir="fr"/>
-    <ROW Directory="heIL_1_Dir" Directory_Parent="Optikey2025AKv9_Dir" DefaultDir="he-IL"/>
     <ROW Directory="heIL_Dir" Directory_Parent="Release_Dir" DefaultDir="he-IL"/>
-    <ROW Directory="hiIN_1_Dir" Directory_Parent="Optikey2025AKv9_Dir" DefaultDir="hi-IN"/>
     <ROW Directory="hiIN_Dir" Directory_Parent="Release_Dir" DefaultDir="hi-IN"/>
-    <ROW Directory="hrHR_1_Dir" Directory_Parent="Optikey2025AKv9_Dir" DefaultDir="hr-HR"/>
     <ROW Directory="hrHR_Dir" Directory_Parent="Release_Dir" DefaultDir="hr-HR"/>
-    <ROW Directory="huHU_1_Dir" Directory_Parent="Optikey2025AKv9_Dir" DefaultDir="hu-HU"/>
     <ROW Directory="huHU_Dir" Directory_Parent="Release_Dir" DefaultDir="hu-HU"/>
-    <ROW Directory="itIT_1_Dir" Directory_Parent="Optikey2025AKv9_Dir" DefaultDir="it-IT"/>
     <ROW Directory="itIT_Dir" Directory_Parent="Release_Dir" DefaultDir="it-IT"/>
-    <ROW Directory="jaJP_1_Dir" Directory_Parent="Optikey2025AKv9_Dir" DefaultDir="ja-JP"/>
     <ROW Directory="jaJP_Dir" Directory_Parent="Release_Dir" DefaultDir="ja-JP"/>
-    <ROW Directory="kaGE_1_Dir" Directory_Parent="Optikey2025AKv9_Dir" DefaultDir="ka-GE"/>
     <ROW Directory="kaGE_Dir" Directory_Parent="Release_Dir" DefaultDir="ka-GE"/>
-    <ROW Directory="koKR_1_Dir" Directory_Parent="Optikey2025AKv9_Dir" DefaultDir="ko-KR"/>
     <ROW Directory="koKR_Dir" Directory_Parent="Release_Dir" DefaultDir="ko-KR"/>
-    <ROW Directory="nl_1_Dir" Directory_Parent="Optikey2025AKv9_Dir" DefaultDir="nl"/>
     <ROW Directory="nl_Dir" Directory_Parent="Release_Dir" DefaultDir="nl"/>
-    <ROW Directory="opencc_1_Dir" Directory_Parent="Rime_1_Dir" DefaultDir="opencc"/>
     <ROW Directory="opencc_Dir" Directory_Parent="Rime_Dir" DefaultDir="opencc"/>
-    <ROW Directory="plPL_1_Dir" Directory_Parent="Optikey2025AKv9_Dir" DefaultDir="pl-PL"/>
     <ROW Directory="plPL_Dir" Directory_Parent="Release_Dir" DefaultDir="pl-PL"/>
-    <ROW Directory="ptPT_1_Dir" Directory_Parent="Optikey2025AKv9_Dir" DefaultDir="pt-PT"/>
     <ROW Directory="ptPT_Dir" Directory_Parent="Release_Dir" DefaultDir="pt-PT"/>
-    <ROW Directory="ruRU_1_Dir" Directory_Parent="Optikey2025AKv9_Dir" DefaultDir="ru-RU"/>
     <ROW Directory="ruRU_Dir" Directory_Parent="Release_Dir" DefaultDir="ru-RU"/>
-    <ROW Directory="skSK_1_Dir" Directory_Parent="Optikey2025AKv9_Dir" DefaultDir="sk-SK"/>
     <ROW Directory="skSK_Dir" Directory_Parent="Release_Dir" DefaultDir="sk-SK"/>
-    <ROW Directory="slSI_1_Dir" Directory_Parent="Optikey2025AKv9_Dir" DefaultDir="sl-SI"/>
     <ROW Directory="slSI_Dir" Directory_Parent="Release_Dir" DefaultDir="sl-SI"/>
-    <ROW Directory="srCyrlRS_1_Dir" Directory_Parent="Optikey2025AKv9_Dir" DefaultDir="SR-CYR~1|sr-Cyrl-RS"/>
     <ROW Directory="srCyrlRS_Dir" Directory_Parent="Release_Dir" DefaultDir="SR-CYR~1|sr-Cyrl-RS"/>
-    <ROW Directory="trTR_1_Dir" Directory_Parent="Optikey2025AKv9_Dir" DefaultDir="tr-TR"/>
     <ROW Directory="trTR_Dir" Directory_Parent="Release_Dir" DefaultDir="tr-TR"/>
-    <ROW Directory="ukUA_1_Dir" Directory_Parent="Optikey2025AKv9_Dir" DefaultDir="uk-UA"/>
     <ROW Directory="ukUA_Dir" Directory_Parent="Release_Dir" DefaultDir="uk-UA"/>
-    <ROW Directory="urPK_1_Dir" Directory_Parent="Optikey2025AKv9_Dir" DefaultDir="ur-PK"/>
     <ROW Directory="urPK_Dir" Directory_Parent="Release_Dir" DefaultDir="ur-PK"/>
-    <ROW Directory="zhCN_1_Dir" Directory_Parent="Optikey2025AKv9_Dir" DefaultDir="zh-CN"/>
     <ROW Directory="zhCN_Dir" Directory_Parent="Release_Dir" DefaultDir="zh-CN"/>
-    <ROW Directory="zhTW_1_Dir" Directory_Parent="Optikey2025AKv9_Dir" DefaultDir="zh-TW"/>
     <ROW Directory="zhTW_Dir" Directory_Parent="Release_Dir" DefaultDir="zh-TW"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
     <ROW Component="APPDIR" ComponentId="{BCE9D9C0-E20E-46AB-A912-C0E4A61BE0EC}" Directory_="APPDIR" Attributes="0"/>
     <ROW Component="AltAlphaHorizontalKeyboard.xml" ComponentId="{27D7BF1C-4AFA-45BF-91B9-98F00A9D6946}" Directory_="Keyboards_Dir" Attributes="0" KeyPath="AltAlphaHorizontalKeyboard.xml" Type="0"/>
-    <ROW Component="AltAlphaHorizontalKeyboard.xml_1" ComponentId="{CB423560-6756-4FAA-9BEB-0EF62F67366D}" Directory_="Keyboards_1_Dir" Attributes="0" KeyPath="AltAlphaHorizontalKeyboard.xml_1" Type="0"/>
     <ROW Component="Attention.wav" ComponentId="{15F8FE0D-0AEF-4FE5-82D9-DE00045A6ED2}" Directory_="Sounds_Dir" Attributes="0" KeyPath="Attention.wav" Type="0"/>
-    <ROW Component="Attention.wav_1" ComponentId="{8C16488F-1C3F-43E3-B363-37491706EFF0}" Directory_="Sounds_1_Dir" Attributes="0" KeyPath="Attention.wav_1" Type="0"/>
     <ROW Component="B612licenceeplv10.html" ComponentId="{F98017B3-3675-4485-BB10-8CE9FA94D34F}" Directory_="Fonts_Dir" Attributes="0" KeyPath="B612licenceeplv10.html" Type="0"/>
-    <ROW Component="B612licenceeplv10.html_1" ComponentId="{A77555BE-F49A-4DED-B50C-46965573546D}" Directory_="Fonts_1_Dir" Attributes="0" KeyPath="B612licenceeplv10.html_1" Type="0"/>
     <ROW Component="Bass.Net.dll" ComponentId="{1822A740-620A-4A2A-9A6B-C8FFFAC27E44}" Directory_="Release_Dir" Attributes="0" KeyPath="Bass.Net.dll"/>
-    <ROW Component="Bass.Net.dll_1" ComponentId="{5A1358A8-F9C9-4A6D-A7C5-C278BC4B276F}" Directory_="Optikey2025AKv9_Dir" Attributes="0" KeyPath="Bass.Net.dll_1"/>
     <ROW Component="Bass.Net.xml" ComponentId="{BC700909-3EAC-43C5-9946-438835BEFB91}" Directory_="Release_Dir" Attributes="0" KeyPath="Bass.Net.xml" Type="0"/>
-    <ROW Component="Bass.Net.xml_1" ComponentId="{82DAF890-673D-4E8F-A12E-1C3A0810F043}" Directory_="Optikey2025AKv9_Dir" Attributes="0" KeyPath="Bass.Net.xml_1" Type="0"/>
     <ROW Component="C4FE6FD5B7C4D07B3A313E754A9A6A8" ComponentId="{6F04FDA9-44F8-463F-B59B-1305C20F4037}" Directory_="APPDIR" Attributes="260" KeyPath="C4FE6FD5B7C4D07B3A313E754A9A6A8" Options="2"/>
     <ROW Component="CatalanSpain.dic" ComponentId="{13C10299-7782-47BA-8F73-E199ACE98025}" Directory_="Dictionaries_Dir" Attributes="0" KeyPath="CatalanSpain.dic" Type="0"/>
-    <ROW Component="CatalanSpain.dic_1" ComponentId="{76FD6407-DF95-4B10-82EA-AC61EA1814D1}" Directory_="Dictionaries_1_Dir" Attributes="0" KeyPath="CatalanSpain.dic_1" Type="0"/>
     <ROW Component="ControlzEx.dll" ComponentId="{06B2312B-FB5E-48E8-A8F4-E5AD9BA0E725}" Directory_="Release_Dir" Attributes="0" KeyPath="ControlzEx.dll"/>
-    <ROW Component="ControlzEx.dll_1" ComponentId="{257C81C7-91CF-4314-89C7-1712AACCA550}" Directory_="Optikey2025AKv9_Dir" Attributes="0" KeyPath="ControlzEx.dll_1"/>
     <ROW Component="Demo_Bottom.xml" ComponentId="{B71B68AF-6918-47B0-8B4D-91A242C81C77}" Directory_="Samples_1_Dir" Attributes="0" KeyPath="Demo_Bottom.xml" Type="0"/>
-    <ROW Component="Demo_Bottom.xml_1" ComponentId="{E8A9C92B-C30A-4161-A67A-8AF300F07384}" Directory_="Samples_Dir" Attributes="0" KeyPath="Demo_Bottom.xml_1" Type="0"/>
     <ROW Component="EyeGestures.xml" ComponentId="{BCFCB01A-445C-4304-A434-C8711129DBC0}" Directory_="EyeGestures_Dir" Attributes="0" KeyPath="EyeGestures.xml" Type="0"/>
-    <ROW Component="EyeGestures.xml_1" ComponentId="{E1E9F154-D592-45E5-BB22-3DA14369F447}" Directory_="EyeGestures_1_Dir" Attributes="0" KeyPath="EyeGestures.xml_1" Type="0"/>
     <ROW Component="Interop.SpeechLib.dll" ComponentId="{333FCC39-8DEE-4857-81E9-605FE74585D3}" Directory_="Release_Dir" Attributes="256" KeyPath="Interop.SpeechLib.dll"/>
-    <ROW Component="Interop.SpeechLib.dll_1" ComponentId="{4F26A615-5877-4DCE-AA6F-5848698EF9C5}" Directory_="Optikey2025AKv9_Dir" Attributes="256" KeyPath="Interop.SpeechLib.dll_1"/>
     <ROW Component="IrisbondAPI.dll" ComponentId="{7EA8BF49-87DB-449E-A726-14A731D2D94C}" Directory_="Release_Dir" Attributes="256" KeyPath="IrisbondAPI.dll"/>
-    <ROW Component="IrisbondAPI.dll_1" ComponentId="{B1F97102-A062-4E4C-AB17-2478F42A8BC2}" Directory_="Optikey2025AKv9_Dir" Attributes="256" KeyPath="IrisbondAPI.dll_1"/>
     <ROW Component="IrisbondHiruAPI.dll" ComponentId="{01FE18EC-8DCE-49A6-8765-0574181138BE}" Directory_="Release_Dir" Attributes="256" KeyPath="IrisbondHiruAPI.dll"/>
-    <ROW Component="IrisbondHiruAPI.dll_1" ComponentId="{8AE2B6B8-A3CF-4255-A18A-04A2A171569A}" Directory_="Optikey2025AKv9_Dir" Attributes="256" KeyPath="IrisbondHiruAPI.dll_1"/>
     <ROW Component="JuliusSweetland.OptiKey.Contracts.dll" ComponentId="{724323D6-621E-482D-82B3-B3186D559247}" Directory_="Release_Dir" Attributes="256" KeyPath="JuliusSweetland.OptiKey.Contracts.dll"/>
-    <ROW Component="JuliusSweetland.OptiKey.Contracts.dll_1" ComponentId="{64C642DC-7996-477D-BA1F-83F13981948B}" Directory_="Optikey2025AKv9_Dir" Attributes="256" KeyPath="JuliusSweetland.OptiKey.Contracts.dll_1"/>
     <ROW Component="MahApps.Metro.dll" ComponentId="{3AA3D119-7C30-45E2-A02B-3E2264E2FDE4}" Directory_="Release_Dir" Attributes="0" KeyPath="MahApps.Metro.dll"/>
-    <ROW Component="MahApps.Metro.dll_1" ComponentId="{4E2BD7A6-2AA8-4D39-9B8C-230046C1ED54}" Directory_="Optikey2025AKv9_Dir" Attributes="0" KeyPath="MahApps.Metro.dll_1"/>
-    <ROW Component="Microsoft.Expression.Interactions.dll_1" ComponentId="{F190F3A7-0826-4604-9414-D057603CD1E7}" Directory_="Optikey2025AKv9_Dir" Attributes="0" KeyPath="Microsoft.Expression.Interactions.dll_1"/>
-    <ROW Component="Microsoft.Practices.ServiceLocatio_1_n.dll" ComponentId="{93527378-A4C7-4D33-A671-C7CB49D152FC}" Directory_="Optikey2025AKv9_Dir" Attributes="0" KeyPath="Microsoft.Practices.ServiceLocatio_1_n.dll"/>
-    <ROW Component="MouseKeyboardActivityMonitor.dll_1" ComponentId="{C8FDAB17-3080-4DD3-87F7-7D231A81DBF7}" Directory_="Optikey2025AKv9_Dir" Attributes="0" KeyPath="MouseKeyboardActivityMonitor.dll_1"/>
     <ROW Component="Newtonsoft.Json.dll" ComponentId="{90CE486C-8DB8-4835-8AFA-D39467BD4E42}" Directory_="Release_Dir" Attributes="0" KeyPath="Newtonsoft.Json.dll"/>
-    <ROW Component="Newtonsoft.Json.dll_1" ComponentId="{994D409F-955C-4BDD-8F56-27D2BCB03EE1}" Directory_="Optikey2025AKv9_Dir" Attributes="0" KeyPath="Newtonsoft.Json.dll_1"/>
     <ROW Component="Octokit.dll" ComponentId="{B5DA0B27-4804-4D68-893C-A3B415796F29}" Directory_="Release_Dir" Attributes="0" KeyPath="Octokit.dll"/>
-    <ROW Component="Octokit.dll_1" ComponentId="{F704BC55-0F04-42A7-87A8-C3B88EE4CD76}" Directory_="Optikey2025AKv9_Dir" Attributes="0" KeyPath="Octokit.dll_1"/>
     <ROW Component="OptiKey.dll" ComponentId="{1A0E3155-E44F-4522-88F5-AE47103A3023}" Directory_="Release_Dir" Attributes="256" KeyPath="OptiKey.dll"/>
-    <ROW Component="OptiKey.dll_1" ComponentId="{DB792922-4C84-4C71-AF6D-A3EDB1982FE9}" Directory_="Optikey2025AKv9_Dir" Attributes="256" KeyPath="OptiKey.dll_1"/>
     <ROW Component="OptiKey.resources.dll" ComponentId="{627E4669-9BBB-4140-9A23-19A66E0DC904}" Directory_="caES_Dir" Attributes="256" KeyPath="OptiKey.resources.dll"/>
     <ROW Component="OptiKey.resources.dll_1" ComponentId="{6CC0211A-0F1A-4D26-8916-02311EDE9475}" Directory_="csCZ_Dir" Attributes="256" KeyPath="OptiKey.resources.dll_1"/>
     <ROW Component="OptiKey.resources.dll_10" ComponentId="{57CC3AF8-287A-4085-963B-D809F23C8FB3}" Directory_="heIL_Dir" Attributes="256" KeyPath="OptiKey.resources.dll_10"/>
@@ -189,138 +125,62 @@
     <ROW Component="OptiKey.resources.dll_28" ComponentId="{5E3D9C6F-8E25-4D07-AD98-9DBE67DD106E}" Directory_="zhTW_Dir" Attributes="256" KeyPath="OptiKey.resources.dll_28"/>
     <ROW Component="OptiKey.resources.dll_29" ComponentId="{91AF7C9E-E8C6-4CB9-8A97-9CE5502D3C92}" Directory_="zhCN_Dir" Attributes="256" KeyPath="OptiKey.resources.dll_29"/>
     <ROW Component="OptiKey.resources.dll_3" ComponentId="{CA0B63F0-1712-4865-BE64-C7F5FD466DC2}" Directory_="deDE_Dir" Attributes="256" KeyPath="OptiKey.resources.dll_3"/>
-    <ROW Component="OptiKey.resources.dll_30" ComponentId="{4A7B3F79-84FE-4CB1-AD64-F6F01EA4DCFD}" Directory_="caES_1_Dir" Attributes="256" KeyPath="OptiKey.resources.dll_30"/>
-    <ROW Component="OptiKey.resources.dll_31" ComponentId="{17B8A49F-8B5A-41A7-82A5-D28B94167219}" Directory_="csCZ_1_Dir" Attributes="256" KeyPath="OptiKey.resources.dll_31"/>
-    <ROW Component="OptiKey.resources.dll_32" ComponentId="{C3452721-3503-4EB7-ACF8-A337B68FD411}" Directory_="daDK_1_Dir" Attributes="256" KeyPath="OptiKey.resources.dll_32"/>
-    <ROW Component="OptiKey.resources.dll_33" ComponentId="{30BBEF19-540F-4887-B0DE-BE4D882B5C13}" Directory_="deDE_1_Dir" Attributes="256" KeyPath="OptiKey.resources.dll_33"/>
-    <ROW Component="OptiKey.resources.dll_34" ComponentId="{A759CB46-054A-491E-855F-7BC2D5A14D87}" Directory_="elGR_1_Dir" Attributes="256" KeyPath="OptiKey.resources.dll_34"/>
-    <ROW Component="OptiKey.resources.dll_35" ComponentId="{0F319798-38CE-4FD9-AF49-924D658876E6}" Directory_="enUS_1_Dir" Attributes="256" KeyPath="OptiKey.resources.dll_35"/>
-    <ROW Component="OptiKey.resources.dll_36" ComponentId="{10281954-A38D-49D2-8AAA-7203CE225BFE}" Directory_="esES_1_Dir" Attributes="256" KeyPath="OptiKey.resources.dll_36"/>
-    <ROW Component="OptiKey.resources.dll_37" ComponentId="{831AB5E7-4E0A-46B6-97C5-27A61905B50B}" Directory_="fa_1_Dir" Attributes="256" KeyPath="OptiKey.resources.dll_37"/>
-    <ROW Component="OptiKey.resources.dll_38" ComponentId="{166F0F90-A3BC-4293-A86C-1E230A7FD3A1}" Directory_="fiFI_1_Dir" Attributes="256" KeyPath="OptiKey.resources.dll_38"/>
-    <ROW Component="OptiKey.resources.dll_39" ComponentId="{3DC157B1-7B54-422F-A903-953F727BE073}" Directory_="fr_1_Dir" Attributes="256" KeyPath="OptiKey.resources.dll_39"/>
     <ROW Component="OptiKey.resources.dll_4" ComponentId="{B8F63A3C-68A8-4935-9F55-2DFFE8B000FF}" Directory_="elGR_Dir" Attributes="256" KeyPath="OptiKey.resources.dll_4"/>
-    <ROW Component="OptiKey.resources.dll_40" ComponentId="{9DCFAD88-7586-4280-A914-347CF443C8C4}" Directory_="heIL_1_Dir" Attributes="256" KeyPath="OptiKey.resources.dll_40"/>
-    <ROW Component="OptiKey.resources.dll_41" ComponentId="{E3A8303C-3954-40AE-9088-2C76FB67D6EF}" Directory_="hiIN_1_Dir" Attributes="256" KeyPath="OptiKey.resources.dll_41"/>
-    <ROW Component="OptiKey.resources.dll_42" ComponentId="{B0546A7C-145A-4ECF-AB3E-2860F3432824}" Directory_="hrHR_1_Dir" Attributes="256" KeyPath="OptiKey.resources.dll_42"/>
-    <ROW Component="OptiKey.resources.dll_43" ComponentId="{5C9F38AC-B18F-45E6-8949-BE2AA84D3A33}" Directory_="huHU_1_Dir" Attributes="256" KeyPath="OptiKey.resources.dll_43"/>
-    <ROW Component="OptiKey.resources.dll_44" ComponentId="{D57BE559-0078-4764-B05F-036E5707DCA3}" Directory_="itIT_1_Dir" Attributes="256" KeyPath="OptiKey.resources.dll_44"/>
-    <ROW Component="OptiKey.resources.dll_45" ComponentId="{37487E2C-AE2C-4F7C-8992-96D64B137E46}" Directory_="jaJP_1_Dir" Attributes="256" KeyPath="OptiKey.resources.dll_45"/>
-    <ROW Component="OptiKey.resources.dll_46" ComponentId="{1893A0AB-EC12-4B1D-B6B2-DA04363C2915}" Directory_="kaGE_1_Dir" Attributes="256" KeyPath="OptiKey.resources.dll_46"/>
-    <ROW Component="OptiKey.resources.dll_47" ComponentId="{AE961774-499A-4D48-98A4-45B67E4AA720}" Directory_="koKR_1_Dir" Attributes="256" KeyPath="OptiKey.resources.dll_47"/>
-    <ROW Component="OptiKey.resources.dll_48" ComponentId="{28C56C9C-0765-4605-BFD8-3087703E294B}" Directory_="nl_1_Dir" Attributes="256" KeyPath="OptiKey.resources.dll_48"/>
-    <ROW Component="OptiKey.resources.dll_49" ComponentId="{F726DC98-4EF5-4B43-A9F9-6A0DE4845DD9}" Directory_="plPL_1_Dir" Attributes="256" KeyPath="OptiKey.resources.dll_49"/>
     <ROW Component="OptiKey.resources.dll_5" ComponentId="{7A61EB35-0E34-44CE-A2BD-35EF0CF65287}" Directory_="enUS_Dir" Attributes="256" KeyPath="OptiKey.resources.dll_5"/>
-    <ROW Component="OptiKey.resources.dll_50" ComponentId="{EC9D8972-322F-4581-A6A0-B02A31F43615}" Directory_="ptPT_1_Dir" Attributes="256" KeyPath="OptiKey.resources.dll_50"/>
-    <ROW Component="OptiKey.resources.dll_51" ComponentId="{6EA3AAE7-5E9F-4F47-B8AB-4ABF58A292C4}" Directory_="ruRU_1_Dir" Attributes="256" KeyPath="OptiKey.resources.dll_51"/>
-    <ROW Component="OptiKey.resources.dll_52" ComponentId="{82398536-C628-4705-97C4-428E688FDC51}" Directory_="skSK_1_Dir" Attributes="256" KeyPath="OptiKey.resources.dll_52"/>
-    <ROW Component="OptiKey.resources.dll_53" ComponentId="{AF0F7E2C-E8F7-4A63-AD21-8A5039BE8860}" Directory_="slSI_1_Dir" Attributes="256" KeyPath="OptiKey.resources.dll_53"/>
-    <ROW Component="OptiKey.resources.dll_54" ComponentId="{87FACC38-021A-4AC2-A3CC-4ADF6E7DCBB0}" Directory_="srCyrlRS_1_Dir" Attributes="256" KeyPath="OptiKey.resources.dll_54"/>
-    <ROW Component="OptiKey.resources.dll_55" ComponentId="{8B36D09B-112D-4128-8D2F-9FC085AD7BCE}" Directory_="trTR_1_Dir" Attributes="256" KeyPath="OptiKey.resources.dll_55"/>
-    <ROW Component="OptiKey.resources.dll_56" ComponentId="{D198F877-D2DD-4843-9525-17768DC37905}" Directory_="ukUA_1_Dir" Attributes="256" KeyPath="OptiKey.resources.dll_56"/>
-    <ROW Component="OptiKey.resources.dll_57" ComponentId="{057D1012-F848-4384-9EFB-FD31AB3E9146}" Directory_="urPK_1_Dir" Attributes="256" KeyPath="OptiKey.resources.dll_57"/>
-    <ROW Component="OptiKey.resources.dll_58" ComponentId="{DF931D04-5458-4A11-97FB-44E0931F48EE}" Directory_="zhCN_1_Dir" Attributes="256" KeyPath="OptiKey.resources.dll_58"/>
-    <ROW Component="OptiKey.resources.dll_59" ComponentId="{B6179021-EE75-4DE9-BA4C-22A4E48AC97F}" Directory_="zhTW_1_Dir" Attributes="256" KeyPath="OptiKey.resources.dll_59"/>
     <ROW Component="OptiKey.resources.dll_6" ComponentId="{AC73C31C-29C2-4DB4-BE3E-20BE335DD565}" Directory_="esES_Dir" Attributes="256" KeyPath="OptiKey.resources.dll_6"/>
     <ROW Component="OptiKey.resources.dll_7" ComponentId="{64059422-5D3B-4702-ACD2-66DA8676A1CB}" Directory_="fa_Dir" Attributes="256" KeyPath="OptiKey.resources.dll_7"/>
     <ROW Component="OptiKey.resources.dll_8" ComponentId="{17D83DF5-0613-4D17-AC7F-621C54149728}" Directory_="fiFI_Dir" Attributes="256" KeyPath="OptiKey.resources.dll_8"/>
     <ROW Component="OptiKey.resources.dll_9" ComponentId="{C43FBD2F-BFF0-42CD-A75A-CFAF2426C9B6}" Directory_="fr_Dir" Attributes="256" KeyPath="OptiKey.resources.dll_9"/>
     <ROW Component="OptiKeyStandardPlugins.dll" ComponentId="{CD95B211-386B-48C7-8737-CD586DBC42C9}" Directory_="Release_Dir" Attributes="256" KeyPath="OptiKeyStandardPlugins.dll"/>
     <ROW Component="OptiKeyStandardPlugins.dll_1" ComponentId="{3F7EF199-49CF-456D-ACD7-921D8EB56AC1}" Directory_="Plugins_Dir" Attributes="256" KeyPath="OptiKeyStandardPlugins.dll_1"/>
-    <ROW Component="OptiKeyStandardPlugins.dll_2" ComponentId="{8511DEF9-8973-4887-9D02-55D7252737A1}" Directory_="Optikey2025AKv9_Dir" Attributes="256" KeyPath="OptiKeyStandardPlugins.dll_2"/>
-    <ROW Component="OptiKeyStandardPlugins.dll_3" ComponentId="{9958A377-95C3-4042-95B4-3E984DD0F240}" Directory_="Plugins_1_Dir" Attributes="256" KeyPath="OptiKeyStandardPlugins.dll_3"/>
     <ROW Component="Optikey" ComponentId="{BE6421A6-4EF6-45F3-8A32-2E23AFFC6ADB}" Directory_="Optikey_Dir" Attributes="0"/>
     <ROW Component="OptikeyPro.exe" ComponentId="{67A1815C-0F41-4019-926F-5DF7C160A09B}" Directory_="Release_Dir" Attributes="0" KeyPath="OptikeyPro.exe"/>
-    <ROW Component="OptikeyPro.exe_1" ComponentId="{0FEB00C5-D83D-4BBD-99E5-4047F15EBCD2}" Directory_="Optikey2025AKv9_Dir" Attributes="256" KeyPath="OptikeyPro.exe_1"/>
     <ROW Component="PGRFlyCapture.dll" ComponentId="{DB7FCFCE-6807-4CBF-AA1A-C58CA8D1510D}" Directory_="Release_Dir" Attributes="256" KeyPath="PGRFlyCapture.dll"/>
-    <ROW Component="PGRFlyCapture.dll_1" ComponentId="{685B9884-E405-4AAB-B839-65F2D2F6FD10}" Directory_="Optikey2025AKv9_Dir" Attributes="256" KeyPath="PGRFlyCapture.dll_1"/>
     <ROW Component="PointSourceUtils.dll" ComponentId="{36461077-B83C-4150-A111-AA29DDF8E6A0}" Directory_="Release_Dir" Attributes="256" KeyPath="PointSourceUtils.dll"/>
-    <ROW Component="PointSourceUtils.dll_1" ComponentId="{97D60673-354A-4C03-A847-FBDB4CF49C11}" Directory_="Optikey2025AKv9_Dir" Attributes="256" KeyPath="PointSourceUtils.dll_1"/>
     <ROW Component="Prism.Wpf.dll" ComponentId="{85D25BB4-E637-4640-A01E-7840E22A585D}" Directory_="Release_Dir" Attributes="0" KeyPath="Prism.Wpf.dll"/>
-    <ROW Component="Prism.Wpf.dll_1" ComponentId="{3A032A60-598C-497E-BD68-B085D2E75C2E}" Directory_="Optikey2025AKv9_Dir" Attributes="0" KeyPath="Prism.Wpf.dll_1"/>
     <ROW Component="Prism.dll" ComponentId="{466DE73C-15F5-4D25-BDD9-BF382FF08CFD}" Directory_="Release_Dir" Attributes="0" KeyPath="Prism.dll"/>
-    <ROW Component="Prism.dll_1" ComponentId="{25449944-C460-444F-AC02-90863B1BFCB9}" Directory_="Optikey2025AKv9_Dir" Attributes="0" KeyPath="Prism.dll_1"/>
     <ROW Component="ProductInformation" ComponentId="{EC5C0B08-3949-40D7-B3B6-8E6826B24A08}" Directory_="APPDIR" Attributes="260" KeyPath="Version"/>
     <ROW Component="SHORTCUTDIR" ComponentId="{DA5809BA-BA07-4D23-9D56-E748DA33F28D}" Directory_="SHORTCUTDIR" Attributes="0"/>
     <ROW Component="SharpDX.DirectInput.dll" ComponentId="{070596B0-C9B2-4C79-9024-320CA818E4D8}" Directory_="Release_Dir" Attributes="0" KeyPath="SharpDX.DirectInput.dll"/>
-    <ROW Component="SharpDX.DirectInput.dll_1" ComponentId="{1EF6D783-A70B-4594-8CD6-DCA163F47F2D}" Directory_="Optikey2025AKv9_Dir" Attributes="0" KeyPath="SharpDX.DirectInput.dll_1"/>
     <ROW Component="SharpDX.XInput.dll" ComponentId="{A979D3D3-B6F5-4B82-9477-EB3A4B7BD21F}" Directory_="Release_Dir" Attributes="0" KeyPath="SharpDX.XInput.dll"/>
-    <ROW Component="SharpDX.XInput.dll_1" ComponentId="{59F9CAC2-CBB4-4173-982C-962F5C82066A}" Directory_="Optikey2025AKv9_Dir" Attributes="0" KeyPath="SharpDX.XInput.dll_1"/>
     <ROW Component="SharpDX.dll" ComponentId="{930874DA-777B-4731-90B2-EC71A65E1A33}" Directory_="Release_Dir" Attributes="0" KeyPath="SharpDX.dll"/>
-    <ROW Component="SharpDX.dll_1" ComponentId="{89959C52-489A-4C23-9D19-E156756F2560}" Directory_="Optikey2025AKv9_Dir" Attributes="0" KeyPath="SharpDX.dll_1"/>
     <ROW Component="SharpVectors.Converters.dll" ComponentId="{337F0896-C19F-4CBD-9BAA-76CA6454BB1B}" Directory_="Release_Dir" Attributes="0" KeyPath="SharpVectors.Converters.dll"/>
-    <ROW Component="SharpVectors.Converters.dll_1" ComponentId="{D126783D-B442-43C4-BED2-2BB45ADDA8DB}" Directory_="Optikey2025AKv9_Dir" Attributes="0" KeyPath="SharpVectors.Converters.dll_1"/>
     <ROW Component="SharpVectors.Core.dll" ComponentId="{AEB1E220-8EFD-4797-9B96-19AF1349EB69}" Directory_="Release_Dir" Attributes="0" KeyPath="SharpVectors.Core.dll"/>
-    <ROW Component="SharpVectors.Core.dll_1" ComponentId="{350A6F17-7588-4854-AD8D-1D840B85CE63}" Directory_="Optikey2025AKv9_Dir" Attributes="0" KeyPath="SharpVectors.Core.dll_1"/>
     <ROW Component="SharpVectors.Css.dll" ComponentId="{BAF870B2-31CD-4121-BD2B-6E7E8B69E58D}" Directory_="Release_Dir" Attributes="0" KeyPath="SharpVectors.Css.dll"/>
-    <ROW Component="SharpVectors.Css.dll_1" ComponentId="{9790FBCE-13C3-4D85-BE30-E8ABD8DA04CD}" Directory_="Optikey2025AKv9_Dir" Attributes="0" KeyPath="SharpVectors.Css.dll_1"/>
     <ROW Component="SharpVectors.Dom.dll" ComponentId="{267134E7-A76A-41B5-AC25-7DDA9CA6AD8C}" Directory_="Release_Dir" Attributes="0" KeyPath="SharpVectors.Dom.dll"/>
-    <ROW Component="SharpVectors.Dom.dll_1" ComponentId="{C6E53CF1-AF55-4383-AB82-8425E839AC53}" Directory_="Optikey2025AKv9_Dir" Attributes="0" KeyPath="SharpVectors.Dom.dll_1"/>
     <ROW Component="SharpVectors.Model.dll" ComponentId="{B5225016-5729-4F12-98B0-83ABD8297EFD}" Directory_="Release_Dir" Attributes="0" KeyPath="SharpVectors.Model.dll"/>
-    <ROW Component="SharpVectors.Model.dll_1" ComponentId="{D81A1142-1DA2-48D7-B60C-A25D3D3B5C01}" Directory_="Optikey2025AKv9_Dir" Attributes="0" KeyPath="SharpVectors.Model.dll_1"/>
     <ROW Component="SharpVectors.Rendering.Gdi.dll" ComponentId="{99C53F08-2E90-4071-B7D0-02622733FF32}" Directory_="Release_Dir" Attributes="0" KeyPath="SharpVectors.Rendering.Gdi.dll"/>
-    <ROW Component="SharpVectors.Rendering.Gdi.dll_1" ComponentId="{467118EF-57C8-477F-A8F5-0306FA298528}" Directory_="Optikey2025AKv9_Dir" Attributes="0" KeyPath="SharpVectors.Rendering.Gdi.dll_1"/>
     <ROW Component="SharpVectors.Rendering.Wpf.dll" ComponentId="{F7DF1CBE-DD29-46AC-8B48-AFD44652B6A0}" Directory_="Release_Dir" Attributes="0" KeyPath="SharpVectors.Rendering.Wpf.dll"/>
-    <ROW Component="SharpVectors.Rendering.Wpf.dll_1" ComponentId="{A8FF6A4A-88DB-4FE2-B3FE-C5CEEA0E0A42}" Directory_="Optikey2025AKv9_Dir" Attributes="0" KeyPath="SharpVectors.Rendering.Wpf.dll_1"/>
     <ROW Component="SharpVectors.Runtime.dll" ComponentId="{BFFB0B8C-EAC0-4A03-B551-4BFE8EADFB06}" Directory_="Release_Dir" Attributes="0" KeyPath="SharpVectors.Runtime.dll"/>
-    <ROW Component="SharpVectors.Runtime.dll_1" ComponentId="{31F9A462-362F-458F-A3C5-1CB39552F32E}" Directory_="Optikey2025AKv9_Dir" Attributes="0" KeyPath="SharpVectors.Runtime.dll_1"/>
     <ROW Component="System.IO.Compression.dll" ComponentId="{0C02628C-0813-4EF5-8408-D1B517D1C1F8}" Directory_="Release_Dir" Attributes="0" KeyPath="System.IO.Compression.dll"/>
-    <ROW Component="System.IO.Compression.dll_1" ComponentId="{D4825C2D-48B4-4B66-90B8-A6C4B021D94C}" Directory_="Optikey2025AKv9_Dir" Attributes="0" KeyPath="System.IO.Compression.dll_1"/>
     <ROW Component="System.Reactive.Core.dll" ComponentId="{AB96F42B-0872-4EFD-8819-D28F0541D831}" Directory_="Release_Dir" Attributes="0" KeyPath="System.Reactive.Core.dll"/>
-    <ROW Component="System.Reactive.Core.dll_1" ComponentId="{BE4CD80E-0733-46CC-A4B7-55FB03812F3B}" Directory_="Optikey2025AKv9_Dir" Attributes="0" KeyPath="System.Reactive.Core.dll_1"/>
     <ROW Component="System.Reactive.Interfaces.dll" ComponentId="{8A427F87-C4E4-4A7A-A28E-3613E02C2D7F}" Directory_="Release_Dir" Attributes="0" KeyPath="System.Reactive.Interfaces.dll"/>
-    <ROW Component="System.Reactive.Interfaces.dll_1" ComponentId="{8DA12960-6CAE-46C1-8B73-11F8DB74EE81}" Directory_="Optikey2025AKv9_Dir" Attributes="0" KeyPath="System.Reactive.Interfaces.dll_1"/>
     <ROW Component="System.Reactive.Linq.dll" ComponentId="{C050F015-0A16-4149-B90D-C5ED6B32E74F}" Directory_="Release_Dir" Attributes="0" KeyPath="System.Reactive.Linq.dll"/>
-    <ROW Component="System.Reactive.Linq.dll_1" ComponentId="{A2BAA553-C81D-4990-8E6A-B4D3C4FA14B8}" Directory_="Optikey2025AKv9_Dir" Attributes="0" KeyPath="System.Reactive.Linq.dll_1"/>
-    <ROW Component="System.Reactive.PlatformServices.dll_1" ComponentId="{1808687F-47D9-44C8-B459-9C91A27DDB14}" Directory_="Optikey2025AKv9_Dir" Attributes="0" KeyPath="System.Reactive.PlatformServices.dll_1"/>
     <ROW Component="System.Reactive.Windows.Threading.dll" ComponentId="{603C350C-7225-47DB-971E-4C9177F2C9F8}" Directory_="Release_Dir" Attributes="0" KeyPath="System.Reactive.Windows.Threading.dll"/>
-    <ROW Component="System.Reactive.Windows.Threading.dll_1" ComponentId="{C42B643C-76EE-4937-B8C3-A0766405338E}" Directory_="Optikey2025AKv9_Dir" Attributes="0" KeyPath="System.Reactive.Windows.Threading.dll_1"/>
     <ROW Component="System.Windows.Interactivity.dll" ComponentId="{6B16DAD8-4344-4CF0-AAF7-EAC887BE7398}" Directory_="Release_Dir" Attributes="0" KeyPath="System.Windows.Interactivity.dll"/>
-    <ROW Component="System.Windows.Interactivity.dll_1" ComponentId="{33E1D29E-86F6-4AF1-9DBC-ADAD61A3D650}" Directory_="Optikey2025AKv9_Dir" Attributes="0" KeyPath="System.Windows.Interactivity.dll_1"/>
     <ROW Component="TETCSharpClient.dll" ComponentId="{C3E02EE9-1E1B-4862-81BF-026B3CF9CD59}" Directory_="Release_Dir" Attributes="0" KeyPath="TETCSharpClient.dll"/>
-    <ROW Component="TETCSharpClient.dll_1" ComponentId="{FC826D74-5625-4714-B0D6-3B93277C44A7}" Directory_="Optikey2025AKv9_Dir" Attributes="0" KeyPath="TETCSharpClient.dll_1"/>
     <ROW Component="TETControls.dll" ComponentId="{2D89B72E-8645-4381-AB01-E579EC0679F7}" Directory_="Release_Dir" Attributes="0" KeyPath="TETControls.dll"/>
-    <ROW Component="TETControls.dll_1" ComponentId="{57873EC4-A3A4-4089-B6F9-1144FD777170}" Directory_="Optikey2025AKv9_Dir" Attributes="0" KeyPath="TETControls.dll_1"/>
     <ROW Component="TestControllers.exe" ComponentId="{F6217D6F-DE30-488A-9902-B810C37DAD8A}" Directory_="APPDIR" Attributes="0" KeyPath="TestControllers.exe"/>
     <ROW Component="TestControllers.exe.config" ComponentId="{7127E9CC-C0BA-4570-BA4B-17AF9A143E9B}" Directory_="APPDIR" Attributes="0" KeyPath="TestControllers.exe.config" Type="0"/>
     <ROW Component="WindowsInput.dll" ComponentId="{E1116135-7EA8-43B3-9479-ABB871DC4F48}" Directory_="Release_Dir" Attributes="0" KeyPath="WindowsInput.dll"/>
-    <ROW Component="WindowsInput.dll_1" ComponentId="{0FEF11D3-ACE7-460D-ABC7-BEE44CDFCB42}" Directory_="Optikey2025AKv9_Dir" Attributes="0" KeyPath="WindowsInput.dll_1"/>
-    <ROW Component="WindowsRecipes.TaskbarSingleInstan_1_ce.dll" ComponentId="{03ABC525-49C9-464D-8BCA-FB58B51C1DF9}" Directory_="Optikey2025AKv9_Dir" Attributes="256" KeyPath="WindowsRecipes.TaskbarSingleInstan_1_ce.dll"/>
-    <ROW Component="WindowsRecipes.TaskbarSingleInstan_2_ce.Wpf.dll" ComponentId="{020E53CB-2C77-4EFB-BB07-76E32A57E48D}" Directory_="Optikey2025AKv9_Dir" Attributes="256" KeyPath="WindowsRecipes.TaskbarSingleInstan_1_ce.Wpf.dll"/>
     <ROW Component="WindowsRecipes.TaskbarSingleInstance.Wpf.dll" ComponentId="{B61DE22B-8627-432E-B872-FA9F6E037F08}" Directory_="Release_Dir" Attributes="256" KeyPath="WindowsRecipes.TaskbarSingleInstance.Wpf.dll"/>
     <ROW Component="WindowsRecipes.TaskbarSingleInstance.dll" ComponentId="{E41BF5E7-C6FE-481A-80C5-1AE485F760EC}" Directory_="Release_Dir" Attributes="256" KeyPath="WindowsRecipes.TaskbarSingleInstance.dll"/>
     <ROW Component="avcodec58.dll" ComponentId="{D56FA729-7047-4970-9E58-6792926D7B36}" Directory_="Release_Dir" Attributes="256" KeyPath="avcodec58.dll"/>
-    <ROW Component="avcodec58.dll_1" ComponentId="{549A1383-1E3D-4E36-A5F3-9199490B9103}" Directory_="Optikey2025AKv9_Dir" Attributes="256" KeyPath="avcodec58.dll_1"/>
     <ROW Component="avdevice58.dll" ComponentId="{D6F2E1CF-B5E2-4EEC-A48C-E2D482C5A37A}" Directory_="Release_Dir" Attributes="256" KeyPath="avdevice58.dll"/>
-    <ROW Component="avdevice58.dll_1" ComponentId="{CAC39DB8-6BDF-41B3-892A-F61C9DC0C9F5}" Directory_="Optikey2025AKv9_Dir" Attributes="256" KeyPath="avdevice58.dll_1"/>
     <ROW Component="avfilter7.dll" ComponentId="{A087E3C7-1931-4EA8-868D-36B57CC9257C}" Directory_="Release_Dir" Attributes="0" KeyPath="avfilter7.dll"/>
-    <ROW Component="avfilter7.dll_1" ComponentId="{B6052332-2984-49C7-AD38-43E39C4EA17E}" Directory_="Optikey2025AKv9_Dir" Attributes="0" KeyPath="avfilter7.dll_1"/>
     <ROW Component="avformat58.dll" ComponentId="{F1DFD378-C827-4E76-80D9-EBCEDEDC0AEB}" Directory_="Release_Dir" Attributes="256" KeyPath="avformat58.dll"/>
-    <ROW Component="avformat58.dll_1" ComponentId="{EF5233F0-CF34-4EA2-B549-F9F8262DB437}" Directory_="Optikey2025AKv9_Dir" Attributes="256" KeyPath="avformat58.dll_1"/>
     <ROW Component="avutil56.dll" ComponentId="{4E11E22B-ABF2-4BCD-BC21-D2EC619DD9F0}" Directory_="Release_Dir" Attributes="256" KeyPath="avutil56.dll"/>
-    <ROW Component="avutil56.dll_1" ComponentId="{D979A742-9E8B-4D1E-88A5-6A1FD2CF6E3B}" Directory_="Optikey2025AKv9_Dir" Attributes="256" KeyPath="avutil56.dll_1"/>
     <ROW Component="back.png" ComponentId="{7785AB14-F801-482D-9211-889EB01209D6}" Directory_="CommuniKate_Dir" Attributes="0" KeyPath="back.png" Type="0"/>
-    <ROW Component="back.png_1" ComponentId="{B2AB8B7A-1A17-40E0-9800-6A70DFC0201D}" Directory_="CommuniKate_1_Dir" Attributes="0" KeyPath="back.png_1" Type="0"/>
     <ROW Component="bass.dll" ComponentId="{82765289-FCDA-4338-894F-AD58EDBD95E5}" Directory_="Release_Dir" Attributes="256" KeyPath="bass.dll"/>
-    <ROW Component="bass.dll_1" ComponentId="{E85A9DBC-4668-4466-B03B-D1FFCFB03E23}" Directory_="Optikey2025AKv9_Dir" Attributes="256" KeyPath="bass.dll_1"/>
     <ROW Component="bopomofo.schema.yaml" ComponentId="{7A0B5A29-B458-4A5B-8BD3-A3898ECECAEA}" Directory_="Rime_Dir" Attributes="0" KeyPath="bopomofo.schema.yaml" Type="0"/>
-    <ROW Component="bopomofo.schema.yaml_1" ComponentId="{B5411DA1-BB1F-40A3-AFF8-EC4B25A4291A}" Directory_="Rime_1_Dir" Attributes="0" KeyPath="bopomofo.schema.yaml_1" Type="0"/>
     <ROW Component="database.zip" ComponentId="{92A454EC-03E0-4552-A646-A3F150B409D7}" Directory_="Presage_Dir" Attributes="0" KeyPath="database.zip" Type="0"/>
-    <ROW Component="database.zip_1" ComponentId="{458FD858-AC52-4236-A762-14ABB33C99F3}" Directory_="Presage_1_Dir" Attributes="0" KeyPath="database.zip_1" Type="0"/>
     <ROW Component="hk2s.json" ComponentId="{164DB8C6-9638-482E-BE4F-44EC5B720EA6}" Directory_="opencc_Dir" Attributes="0" KeyPath="hk2s.json" Type="0"/>
-    <ROW Component="hk2s.json_1" ComponentId="{6888E982-D3CF-4D27-8C98-1C772FCF92E0}" Directory_="opencc_1_Dir" Attributes="0" KeyPath="hk2s.json_1" Type="0"/>
     <ROW Component="log4net.dll" ComponentId="{0306B966-EDE0-4E31-8267-78B6A45EAEE9}" Directory_="Release_Dir" Attributes="0" KeyPath="log4net.dll"/>
-    <ROW Component="log4net.dll_1" ComponentId="{3D3B5696-82E7-4E8E-8AF3-0D313C0E9BF9}" Directory_="Optikey2025AKv9_Dir" Attributes="0" KeyPath="log4net.dll_1"/>
     <ROW Component="nunit.framework.dll" ComponentId="{87EB8DE7-73E3-4E70-9B79-42141C82175B}" Directory_="Release_Dir" Attributes="0" KeyPath="nunit.framework.dll"/>
-    <ROW Component="nunit.framework.dll_1" ComponentId="{EFF81007-BE6F-415F-A7C3-AF9754DFE61B}" Directory_="Optikey2025AKv9_Dir" Attributes="0" KeyPath="nunit.framework.dll_1"/>
     <ROW Component="presage.net.dll" ComponentId="{02594AE2-2DC8-453B-BD74-8114D86BC319}" Directory_="Release_Dir" Attributes="256" KeyPath="presage.net.dll"/>
-    <ROW Component="presage.net.dll_1" ComponentId="{08B13EA3-0D7C-4C9C-AEAC-D7A4D8AA29F5}" Directory_="Optikey2025AKv9_Dir" Attributes="256" KeyPath="presage.net.dll_1"/>
     <ROW Component="rime.dll" ComponentId="{C92C54F3-8B41-456C-8A0F-EDE43819F09C}" Directory_="Rime_Dir" Attributes="0" KeyPath="rime.dll"/>
-    <ROW Component="rime.dll_1" ComponentId="{CF39EA80-47BF-4B2E-BC82-5AEE8971C0B9}" Directory_="Rime_1_Dir" Attributes="256" KeyPath="rime.dll_1"/>
     <ROW Component="swresample3.dll" ComponentId="{8EA694A8-F9ED-4976-975C-F48430F27968}" Directory_="Release_Dir" Attributes="256" KeyPath="swresample3.dll"/>
-    <ROW Component="swresample3.dll_1" ComponentId="{58F20073-634C-4A26-82DF-07A170F000C7}" Directory_="Optikey2025AKv9_Dir" Attributes="256" KeyPath="swresample3.dll_1"/>
     <ROW Component="tobiitrackers.txt" ComponentId="{B9AF73D1-2C13-4175-8DAF-91D28FC82948}" Directory_="EyeTrackerSupport_Dir" Attributes="0" KeyPath="tobiitrackers.txt" Type="0"/>
-    <ROW Component="tobiitrackers.txt_1" ComponentId="{DB3358BE-E2F0-4417-AE39-B32D22D8CFF0}" Directory_="EyeTrackerSupport_1_Dir" Attributes="0" KeyPath="tobiitrackers.txt_1" Type="0"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
     <ROW Feature="C4FE6FD5B7C4D07B3A313E754A9A6A8" Title="Visual C++ Redistributable for Visual Studio 2015-2022 x64" Description="Visual C++ Redistributable for Visual Studio 2015-2022 x64" Display="3" Level="1" Attributes="0"/>
@@ -578,264 +438,6 @@
     <ROW File="zhuyin.yaml" Component_="bopomofo.schema.yaml" FileName="ZHUYIN~1.YAM|zhuyin.yaml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Resources\Rime\zhuyin.yaml" SelfReg="false"/>
     <ROW File="OptiKey.resources.dll_28" Component_="OptiKey.resources.dll_28" FileName="OPTIKE~1.DLL|OptiKey.resources.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\zh-TW\OptiKey.resources.dll" SelfReg="false"/>
     <ROW File="OptiKey.resources.dll_29" Component_="OptiKey.resources.dll_29" FileName="OPTIKE~1.DLL|OptiKey.resources.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\zh-CN\OptiKey.resources.dll" SelfReg="false"/>
-    <ROW File="Optikey2025AKv8.zip" Component_="Bass.Net.xml" FileName="OPTIKE~1.ZIP|Optikey-2025-AK-v8.zip" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v8.zip" SelfReg="false"/>
-    <ROW File="avcodec58.dll_1" Component_="avcodec58.dll_1" FileName="AVCODE~1.DLL|avcodec-58.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\avcodec-58.dll" SelfReg="false"/>
-    <ROW File="avdevice58.dll_1" Component_="avdevice58.dll_1" FileName="AVDEVI~1.DLL|avdevice-58.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\avdevice-58.dll" SelfReg="false"/>
-    <ROW File="avfilter7.dll_1" Component_="avfilter7.dll_1" FileName="AVFILT~1.DLL|avfilter-7.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\avfilter-7.dll" SelfReg="false"/>
-    <ROW File="avformat58.dll_1" Component_="avformat58.dll_1" FileName="AVFORM~1.DLL|avformat-58.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\avformat-58.dll" SelfReg="false"/>
-    <ROW File="avutil56.dll_1" Component_="avutil56.dll_1" FileName="AVUTIL~1.DLL|avutil-56.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\avutil-56.dll" SelfReg="false"/>
-    <ROW File="bass.dll_1" Component_="bass.dll_1" FileName="bass.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\bass.dll" SelfReg="false"/>
-    <ROW File="Bass.Net.dll_1" Component_="Bass.Net.dll_1" FileName="BASSNE~1.DLL|Bass.Net.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Bass.Net.dll" SelfReg="false"/>
-    <ROW File="Bass.Net.xml_1" Component_="Bass.Net.xml_1" FileName="BASSNE~1.XML|Bass.Net.xml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Bass.Net.xml" SelfReg="false"/>
-    <ROW File="OptiKey.resources.dll_30" Component_="OptiKey.resources.dll_30" FileName="OPTIKE~1.DLL|OptiKey.resources.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\ca-ES\OptiKey.resources.dll" SelfReg="false"/>
-    <ROW File="ControlzEx.dll_1" Component_="ControlzEx.dll_1" FileName="CONTRO~1.DLL|ControlzEx.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\ControlzEx.dll" SelfReg="false"/>
-    <ROW File="ControlzEx.pdb_1" Component_="ControlzEx.dll_1" FileName="CONTRO~1.PDB|ControlzEx.pdb" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\ControlzEx.pdb" SelfReg="false"/>
-    <ROW File="CREDITS.md_1" Component_="Bass.Net.xml_1" FileName="CREDITS.md" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\CREDITS.md" SelfReg="false"/>
-    <ROW File="OptiKey.resources.dll_31" Component_="OptiKey.resources.dll_31" FileName="OPTIKE~1.DLL|OptiKey.resources.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\cs-CZ\OptiKey.resources.dll" SelfReg="false"/>
-    <ROW File="OptiKey.resources.dll_32" Component_="OptiKey.resources.dll_32" FileName="OPTIKE~1.DLL|OptiKey.resources.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\da-DK\OptiKey.resources.dll" SelfReg="false"/>
-    <ROW File="OptiKey.resources.dll_33" Component_="OptiKey.resources.dll_33" FileName="OPTIKE~1.DLL|OptiKey.resources.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\de-DE\OptiKey.resources.dll" SelfReg="false"/>
-    <ROW File="CatalanSpain.dic_1" Component_="CatalanSpain.dic_1" FileName="CATALA~1.DIC|CatalanSpain.dic" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Dictionaries\CatalanSpain.dic" SelfReg="false"/>
-    <ROW File="CroatianCroatia.dic_1" Component_="CatalanSpain.dic_1" FileName="CROATI~1.DIC|CroatianCroatia.dic" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Dictionaries\CroatianCroatia.dic" SelfReg="false"/>
-    <ROW File="CzechCzechRepublic.dic_1" Component_="CatalanSpain.dic_1" FileName="CZECHC~1.DIC|CzechCzechRepublic.dic" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Dictionaries\CzechCzechRepublic.dic" SelfReg="false"/>
-    <ROW File="DanishDenmark.dic_1" Component_="CatalanSpain.dic_1" FileName="DANISH~1.DIC|DanishDenmark.dic" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Dictionaries\DanishDenmark.dic" SelfReg="false"/>
-    <ROW File="DutchBelgium.dic_1" Component_="CatalanSpain.dic_1" FileName="DUTCHB~1.DIC|DutchBelgium.dic" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Dictionaries\DutchBelgium.dic" SelfReg="false"/>
-    <ROW File="DutchNetherlands.dic_1" Component_="CatalanSpain.dic_1" FileName="DUTCHN~1.DIC|DutchNetherlands.dic" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Dictionaries\DutchNetherlands.dic" SelfReg="false"/>
-    <ROW File="EnglishCanada.dic_1" Component_="CatalanSpain.dic_1" FileName="ENGLIS~1.DIC|EnglishCanada.dic" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Dictionaries\EnglishCanada.dic" SelfReg="false"/>
-    <ROW File="EnglishUK.dic_1" Component_="CatalanSpain.dic_1" FileName="ENGLIS~2.DIC|EnglishUK.dic" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Dictionaries\EnglishUK.dic" SelfReg="false"/>
-    <ROW File="EnglishUS.dic_1" Component_="CatalanSpain.dic_1" FileName="ENGLIS~3.DIC|EnglishUS.dic" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Dictionaries\EnglishUS.dic" SelfReg="false"/>
-    <ROW File="FinnishFinland.dic_1" Component_="CatalanSpain.dic_1" FileName="FINNIS~1.DIC|FinnishFinland.dic" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Dictionaries\FinnishFinland.dic" SelfReg="false"/>
-    <ROW File="FrenchCanada.dic_1" Component_="CatalanSpain.dic_1" FileName="FRENCH~1.DIC|FrenchCanada.dic" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Dictionaries\FrenchCanada.dic" SelfReg="false"/>
-    <ROW File="FrenchFrance.dic_1" Component_="CatalanSpain.dic_1" FileName="FRENCH~2.DIC|FrenchFrance.dic" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Dictionaries\FrenchFrance.dic" SelfReg="false"/>
-    <ROW File="GeorgianGeorgia.dic_1" Component_="CatalanSpain.dic_1" FileName="GEORGI~1.DIC|GeorgianGeorgia.dic" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Dictionaries\GeorgianGeorgia.dic" SelfReg="false"/>
-    <ROW File="GermanGermany.dic_1" Component_="CatalanSpain.dic_1" FileName="GERMAN~1.DIC|GermanGermany.dic" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Dictionaries\GermanGermany.dic" SelfReg="false"/>
-    <ROW File="GreekGreece.dic_1" Component_="CatalanSpain.dic_1" FileName="GREEKG~1.DIC|GreekGreece.dic" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Dictionaries\GreekGreece.dic" SelfReg="false"/>
-    <ROW File="HebrewIsrael.dic_1" Component_="CatalanSpain.dic_1" FileName="HEBREW~1.DIC|HebrewIsrael.dic" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Dictionaries\HebrewIsrael.dic" SelfReg="false"/>
-    <ROW File="HindiIndia.dic_1" Component_="CatalanSpain.dic_1" FileName="HINDII~1.DIC|HindiIndia.dic" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Dictionaries\HindiIndia.dic" SelfReg="false"/>
-    <ROW File="HungarianHungary.dic_1" Component_="CatalanSpain.dic_1" FileName="HUNGAR~1.DIC|HungarianHungary.dic" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Dictionaries\HungarianHungary.dic" SelfReg="false"/>
-    <ROW File="ItalianItaly.dic_1" Component_="CatalanSpain.dic_1" FileName="ITALIA~1.DIC|ItalianItaly.dic" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Dictionaries\ItalianItaly.dic" SelfReg="false"/>
-    <ROW File="JapaneseJapan.dic_1" Component_="CatalanSpain.dic_1" FileName="JAPANE~1.DIC|JapaneseJapan.dic" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Dictionaries\JapaneseJapan.dic" SelfReg="false"/>
-    <ROW File="KoreanKorea.dic_1" Component_="CatalanSpain.dic_1" FileName="KOREAN~1.DIC|KoreanKorea.dic" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Dictionaries\KoreanKorea.dic" SelfReg="false"/>
-    <ROW File="PersianIran.dic_1" Component_="CatalanSpain.dic_1" FileName="PERSIA~1.DIC|PersianIran.dic" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Dictionaries\PersianIran.dic" SelfReg="false"/>
-    <ROW File="PolishPoland.dic_1" Component_="CatalanSpain.dic_1" FileName="POLISH~1.DIC|PolishPoland.dic" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Dictionaries\PolishPoland.dic" SelfReg="false"/>
-    <ROW File="PortuguesePortugal.dic_1" Component_="CatalanSpain.dic_1" FileName="PORTUG~1.DIC|PortuguesePortugal.dic" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Dictionaries\PortuguesePortugal.dic" SelfReg="false"/>
-    <ROW File="RussianRussia.dic_1" Component_="CatalanSpain.dic_1" FileName="RUSSIA~1.DIC|RussianRussia.dic" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Dictionaries\RussianRussia.dic" SelfReg="false"/>
-    <ROW File="SerbianSerbia.dic_1" Component_="CatalanSpain.dic_1" FileName="SERBIA~1.DIC|SerbianSerbia.dic" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Dictionaries\SerbianSerbia.dic" SelfReg="false"/>
-    <ROW File="SlovakSlovakia.dic_1" Component_="CatalanSpain.dic_1" FileName="SLOVAK~1.DIC|SlovakSlovakia.dic" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Dictionaries\SlovakSlovakia.dic" SelfReg="false"/>
-    <ROW File="SlovenianSlovenia.dic_1" Component_="CatalanSpain.dic_1" FileName="SLOVEN~1.DIC|SlovenianSlovenia.dic" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Dictionaries\SlovenianSlovenia.dic" SelfReg="false"/>
-    <ROW File="SpanishSpain.dic_1" Component_="CatalanSpain.dic_1" FileName="SPANIS~1.DIC|SpanishSpain.dic" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Dictionaries\SpanishSpain.dic" SelfReg="false"/>
-    <ROW File="TurkishTurkey.dic_1" Component_="CatalanSpain.dic_1" FileName="TURKIS~1.DIC|TurkishTurkey.dic" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Dictionaries\TurkishTurkey.dic" SelfReg="false"/>
-    <ROW File="UkrainianUkraine.dic_1" Component_="CatalanSpain.dic_1" FileName="UKRAIN~1.DIC|UkrainianUkraine.dic" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Dictionaries\UkrainianUkraine.dic" SelfReg="false"/>
-    <ROW File="UrduPakistan.dic_1" Component_="CatalanSpain.dic_1" FileName="URDUPA~1.DIC|UrduPakistan.dic" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Dictionaries\UrduPakistan.dic" SelfReg="false"/>
-    <ROW File="OptiKey.resources.dll_34" Component_="OptiKey.resources.dll_34" FileName="OPTIKE~1.DLL|OptiKey.resources.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\el-GR\OptiKey.resources.dll" SelfReg="false"/>
-    <ROW File="OptiKey.resources.dll_35" Component_="OptiKey.resources.dll_35" FileName="OPTIKE~1.DLL|OptiKey.resources.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\en-US\OptiKey.resources.dll" SelfReg="false"/>
-    <ROW File="OptiKey.resources.dll_36" Component_="OptiKey.resources.dll_36" FileName="OPTIKE~1.DLL|OptiKey.resources.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\es-ES\OptiKey.resources.dll" SelfReg="false"/>
-    <ROW File="OptiKey.resources.dll_37" Component_="OptiKey.resources.dll_37" FileName="OPTIKE~1.DLL|OptiKey.resources.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\fa\OptiKey.resources.dll" SelfReg="false"/>
-    <ROW File="OptiKey.resources.dll_38" Component_="OptiKey.resources.dll_38" FileName="OPTIKE~1.DLL|OptiKey.resources.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\fi-FI\OptiKey.resources.dll" SelfReg="false"/>
-    <ROW File="OptiKey.resources.dll_39" Component_="OptiKey.resources.dll_39" FileName="OPTIKE~1.DLL|OptiKey.resources.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\fr\OptiKey.resources.dll" SelfReg="false"/>
-    <ROW File="OptiKey.resources.dll_40" Component_="OptiKey.resources.dll_40" FileName="OPTIKE~1.DLL|OptiKey.resources.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\he-IL\OptiKey.resources.dll" SelfReg="false"/>
-    <ROW File="OptiKey.resources.dll_41" Component_="OptiKey.resources.dll_41" FileName="OPTIKE~1.DLL|OptiKey.resources.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\hi-IN\OptiKey.resources.dll" SelfReg="false"/>
-    <ROW File="OptiKey.resources.dll_42" Component_="OptiKey.resources.dll_42" FileName="OPTIKE~1.DLL|OptiKey.resources.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\hr-HR\OptiKey.resources.dll" SelfReg="false"/>
-    <ROW File="OptiKey.resources.dll_43" Component_="OptiKey.resources.dll_43" FileName="OPTIKE~1.DLL|OptiKey.resources.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\hu-HU\OptiKey.resources.dll" SelfReg="false"/>
-    <ROW File="Interop.SpeechLib.dll_1" Component_="Interop.SpeechLib.dll_1" FileName="INTERO~1.DLL|Interop.SpeechLib.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Interop.SpeechLib.dll" SelfReg="false"/>
-    <ROW File="IrisbondAPI.dll_1" Component_="IrisbondAPI.dll_1" FileName="IRISBO~1.DLL|IrisbondAPI.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\IrisbondAPI.dll" SelfReg="false"/>
-    <ROW File="IrisbondHiruAPI.dll_1" Component_="IrisbondHiruAPI.dll_1" FileName="IRISBO~2.DLL|IrisbondHiruAPI.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\IrisbondHiruAPI.dll" SelfReg="false"/>
-    <ROW File="OptiKey.resources.dll_44" Component_="OptiKey.resources.dll_44" FileName="OPTIKE~1.DLL|OptiKey.resources.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\it-IT\OptiKey.resources.dll" SelfReg="false"/>
-    <ROW File="OptiKey.resources.dll_45" Component_="OptiKey.resources.dll_45" FileName="OPTIKE~1.DLL|OptiKey.resources.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\ja-JP\OptiKey.resources.dll" SelfReg="false"/>
-    <ROW File="JuliusSweetland.OptiKey.Contracts.dll_1" Component_="JuliusSweetland.OptiKey.Contracts.dll_1" FileName="JULIUS~1.DLL|JuliusSweetland.OptiKey.Contracts.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\JuliusSweetland.OptiKey.Contracts.dll" SelfReg="false"/>
-    <ROW File="JuliusSweetland.OptiKey.Contracts.pdb_1" Component_="JuliusSweetland.OptiKey.Contracts.dll_1" FileName="JULIUS~1.PDB|JuliusSweetland.OptiKey.Contracts.pdb" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\JuliusSweetland.OptiKey.Contracts.pdb" SelfReg="false"/>
-    <ROW File="OptiKey.resources.dll_46" Component_="OptiKey.resources.dll_46" FileName="OPTIKE~1.DLL|OptiKey.resources.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\ka-GE\OptiKey.resources.dll" SelfReg="false"/>
-    <ROW File="OptiKey.resources.dll_47" Component_="OptiKey.resources.dll_47" FileName="OPTIKE~1.DLL|OptiKey.resources.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\ko-KR\OptiKey.resources.dll" SelfReg="false"/>
-    <ROW File="LICENSE.txt_1" Component_="Bass.Net.xml_1" FileName="LICENSE.txt" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\LICENSE.txt" SelfReg="false"/>
-    <ROW File="log4net.config_1" Component_="Bass.Net.xml_1" FileName="LOG4NE~1.CON|log4net.config" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\log4net.config" SelfReg="false"/>
-    <ROW File="log4net.dll_1" Component_="log4net.dll_1" FileName="log4net.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\log4net.dll" SelfReg="false"/>
-    <ROW File="MahApps.Metro.dll_1" Component_="MahApps.Metro.dll_1" FileName="MAHAPP~1.DLL|MahApps.Metro.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\MahApps.Metro.dll" SelfReg="false"/>
-    <ROW File="MahApps.Metro.pdb_1" Component_="MahApps.Metro.dll_1" FileName="MAHAPP~1.PDB|MahApps.Metro.pdb" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\MahApps.Metro.pdb" SelfReg="false"/>
-    <ROW File="MahApps.Metro.xml_1" Component_="Bass.Net.xml_1" FileName="MAHAPP~1.XML|MahApps.Metro.xml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\MahApps.Metro.xml" SelfReg="false"/>
-    <ROW File="Microsoft.Expression.Interactions.dll_1" Component_="Microsoft.Expression.Interactions.dll_1" FileName="MICROS~1.DLL|Microsoft.Expression.Interactions.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Microsoft.Expression.Interactions.dll" SelfReg="false"/>
-    <ROW File="Microsoft.Practices.ServiceLocatio_1_n.dll" Component_="Microsoft.Practices.ServiceLocatio_1_n.dll" FileName="MICROS~2.DLL|Microsoft.Practices.ServiceLocation.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Microsoft.Practices.ServiceLocation.dll" SelfReg="false"/>
-    <ROW File="Microsoft.Practices.ServiceLocatio_1_n.pdb" Component_="Microsoft.Practices.ServiceLocatio_1_n.dll" FileName="MICROS~1.PDB|Microsoft.Practices.ServiceLocation.pdb" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Microsoft.Practices.ServiceLocation.pdb" SelfReg="false"/>
-    <ROW File="Microsoft.Practices.ServiceLocatio_1_n.xml" Component_="Bass.Net.xml_1" FileName="MICROS~1.XML|Microsoft.Practices.ServiceLocation.xml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Microsoft.Practices.ServiceLocation.xml" SelfReg="false"/>
-    <ROW File="MouseKeyboardActivityMonitor.dll_1" Component_="MouseKeyboardActivityMonitor.dll_1" FileName="MOUSEK~1.DLL|MouseKeyboardActivityMonitor.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\MouseKeyboardActivityMonitor.dll" SelfReg="false"/>
-    <ROW File="MouseKeyboardActivityMonitor.xml_1" Component_="Bass.Net.xml_1" FileName="MOUSEK~1.XML|MouseKeyboardActivityMonitor.xml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\MouseKeyboardActivityMonitor.xml" SelfReg="false"/>
-    <ROW File="Newtonsoft.Json.dll_1" Component_="Newtonsoft.Json.dll_1" FileName="NEWTON~1.DLL|Newtonsoft.Json.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Newtonsoft.Json.dll" SelfReg="false"/>
-    <ROW File="Newtonsoft.Json.xml_1" Component_="Bass.Net.xml_1" FileName="NEWTON~1.XML|Newtonsoft.Json.xml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Newtonsoft.Json.xml" SelfReg="false"/>
-    <ROW File="OptiKey.resources.dll_48" Component_="OptiKey.resources.dll_48" FileName="OPTIKE~1.DLL|OptiKey.resources.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\nl\OptiKey.resources.dll" SelfReg="false"/>
-    <ROW File="NOTESANDDISCLAIMER.txt_1" Component_="Bass.Net.xml_1" FileName="NOTESA~1.TXT|NOTES AND DISCLAIMER.txt" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\NOTES AND DISCLAIMER.txt" SelfReg="false"/>
-    <ROW File="nunit.framework.dll_1" Component_="nunit.framework.dll_1" FileName="NUNITF~1.DLL|nunit.framework.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\nunit.framework.dll" SelfReg="false"/>
-    <ROW File="nunit.framework.xml_1" Component_="Bass.Net.xml_1" FileName="NUNITF~1.XML|nunit.framework.xml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\nunit.framework.xml" SelfReg="false"/>
-    <ROW File="Octokit.dll_1" Component_="Octokit.dll_1" FileName="Octokit.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Octokit.dll" SelfReg="false"/>
-    <ROW File="OptiKey.dll_1" Component_="OptiKey.dll_1" FileName="OptiKey.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\OptiKey.dll" SelfReg="false"/>
-    <ROW File="OptiKey.dll.config_1" Component_="Bass.Net.xml_1" FileName="OPTIKE~1.CON|OptiKey.dll.config" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\OptiKey.dll.config" SelfReg="false"/>
-    <ROW File="OptiKey.pdb_1" Component_="OptiKey.dll_1" FileName="OptiKey.pdb" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\OptiKey.pdb" SelfReg="false"/>
-    <ROW File="OptikeyPro.exe_1" Component_="OptikeyPro.exe_1" FileName="OPTIKE~1.EXE|OptikeyPro.exe" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\OptikeyPro.exe" SelfReg="false" DigSign="true"/>
-    <ROW File="OptikeyPro.pdb_1" Component_="OptikeyPro.exe_1" FileName="OPTIKE~1.PDB|OptikeyPro.pdb" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\OptikeyPro.pdb" SelfReg="false"/>
-    <ROW File="OptiKeyStandardPlugins.dll_2" Component_="OptiKeyStandardPlugins.dll_2" FileName="OPTIKE~1.DLL|OptiKeyStandardPlugins.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\OptiKeyStandardPlugins.dll" SelfReg="false"/>
-    <ROW File="OptiKeyStandardPlugins.pdb_1" Component_="OptiKeyStandardPlugins.dll_2" FileName="OPTIKE~2.PDB|OptiKeyStandardPlugins.pdb" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\OptiKeyStandardPlugins.pdb" SelfReg="false"/>
-    <ROW File="PGRFlyCapture.dll_1" Component_="PGRFlyCapture.dll_1" FileName="PGRFLY~1.DLL|PGRFlyCapture.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\PGRFlyCapture.dll" SelfReg="false"/>
-    <ROW File="OptiKey.resources.dll_49" Component_="OptiKey.resources.dll_49" FileName="OPTIKE~1.DLL|OptiKey.resources.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\pl-PL\OptiKey.resources.dll" SelfReg="false"/>
-    <ROW File="PointSourceUtils.dll_1" Component_="PointSourceUtils.dll_1" FileName="POINTS~1.DLL|PointSourceUtils.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\PointSourceUtils.dll" SelfReg="false"/>
-    <ROW File="PointSourceUtils.pdb_1" Component_="PointSourceUtils.dll_1" FileName="POINTS~1.PDB|PointSourceUtils.pdb" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\PointSourceUtils.pdb" SelfReg="false"/>
-    <ROW File="presage.net.dll_1" Component_="presage.net.dll_1" FileName="PRESAG~1.DLL|presage.net.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\presage.net.dll" SelfReg="false"/>
-    <ROW File="Prism.dll_1" Component_="Prism.dll_1" FileName="Prism.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Prism.dll" SelfReg="false"/>
-    <ROW File="Prism.Wpf.dll_1" Component_="Prism.Wpf.dll_1" FileName="PRISMW~1.DLL|Prism.Wpf.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Prism.Wpf.dll" SelfReg="false"/>
-    <ROW File="Prism.Wpf.xml_1" Component_="Bass.Net.xml_1" FileName="PRISMW~1.XML|Prism.Wpf.xml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Prism.Wpf.xml" SelfReg="false"/>
-    <ROW File="Prism.xml_1" Component_="Bass.Net.xml_1" FileName="Prism.xml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Prism.xml" SelfReg="false"/>
-    <ROW File="OptiKey.resources.dll_50" Component_="OptiKey.resources.dll_50" FileName="OPTIKE~1.DLL|OptiKey.resources.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\pt-PT\OptiKey.resources.dll" SelfReg="false"/>
-    <ROW File="back.png_1" Component_="back.png_1" FileName="back.png" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\CommuniKate\back.png" SelfReg="false"/>
-    <ROW File="pageset.obz_1" Component_="back.png_1" FileName="pageset.obz" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\CommuniKate\pageset.obz" SelfReg="false"/>
-    <ROW File="EyeGestures.xml_1" Component_="EyeGestures.xml_1" FileName="EYEGES~1.XML|EyeGestures.xml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\EyeGestures\EyeGestures.xml" SelfReg="false"/>
-    <ROW File="tobiitrackers.txt_1" Component_="tobiitrackers.txt_1" FileName="TOBII-~1.TXT|tobii-trackers.txt" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\EyeTrackerSupport\tobii-trackers.txt" SelfReg="false"/>
-    <ROW File="B612licenceeplv10.html_1" Component_="B612licenceeplv10.html_1" FileName="B612-L~1.HTM|B612-licence-epl-v10.html" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Fonts\B612-licence-epl-v10.html" SelfReg="false"/>
-    <ROW File="FarsiWebFontInfoAndLicenseAgreemen_1_t.txt" Component_="B612licenceeplv10.html_1" FileName="FARSIW~1.TXT|FarsiWeb Font Info And License Agreement.txt" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Fonts\FarsiWeb Font Info And License Agreement.txt" SelfReg="false"/>
-    <ROW File="NafeesWebNaskhLicenseAgreement.txt_1" Component_="B612licenceeplv10.html_1" FileName="NAFEES~1.TXT|Nafees Web Naskh License Agreement.txt" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Fonts\Nafees Web Naskh License Agreement.txt" SelfReg="false"/>
-    <ROW File="RobotoFontApacheLicense.txt_1" Component_="B612licenceeplv10.html_1" FileName="ROBOTO~1.TXT|Roboto Font - Apache License.txt" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Fonts\Roboto Font - Apache License.txt" SelfReg="false"/>
-    <ROW File="AltAlphaHorizontalKeyboard.xml_1" Component_="AltAlphaHorizontalKeyboard.xml_1" FileName="ALTALP~1.XML|AltAlphaHorizontalKeyboard.xml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Keyboards\AltAlphaHorizontalKeyboard.xml" SelfReg="false"/>
-    <ROW File="AltAlphaVerticalKeyboard.xml_1" Component_="AltAlphaHorizontalKeyboard.xml_1" FileName="ALTALP~2.XML|AltAlphaVerticalKeyboard.xml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Keyboards\AltAlphaVerticalKeyboard.xml" SelfReg="false"/>
-    <ROW File="Edge.xml_1" Component_="AltAlphaHorizontalKeyboard.xml_1" FileName="Edge.xml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Keyboards\Edge.xml" SelfReg="false"/>
-    <ROW File="FullQwerty.xml_1" Component_="AltAlphaHorizontalKeyboard.xml_1" FileName="FULLQW~1.XML|FullQwerty.xml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Keyboards\FullQwerty.xml" SelfReg="false"/>
-    <ROW File="FullSymbol.xml_1" Component_="AltAlphaHorizontalKeyboard.xml_1" FileName="FULLSY~1.XML|FullSymbol.xml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Keyboards\FullSymbol.xml" SelfReg="false"/>
-    <ROW File="HideUnder.xml_1" Component_="AltAlphaHorizontalKeyboard.xml_1" FileName="HIDEUN~1.XML|HideUnder.xml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Keyboards\HideUnder.xml" SelfReg="false"/>
-    <ROW File="Demo_Bottom.xml_1" Component_="Demo_Bottom.xml_1" FileName="DEMO_B~1.XML|Demo_Bottom.xml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Keyboards\Samples\Demo_Bottom.xml" SelfReg="false"/>
-    <ROW File="Demo_Left.xml_1" Component_="Demo_Bottom.xml_1" FileName="DEMO_L~1.XML|Demo_Left.xml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Keyboards\Samples\Demo_Left.xml" SelfReg="false"/>
-    <ROW File="Demo_Minecraft.xml_1" Component_="Demo_Bottom.xml_1" FileName="DEMO_M~1.XML|Demo_Minecraft.xml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Keyboards\Samples\Demo_Minecraft.xml" SelfReg="false"/>
-    <ROW File="OptiKeyStandardPlugins.dll_3" Component_="OptiKeyStandardPlugins.dll_3" FileName="OPTIKE~1.DLL|OptiKeyStandardPlugins.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Plugins\OptiKeyStandardPlugins.dll" SelfReg="false"/>
-    <ROW File="database.zip_1" Component_="database.zip_1" FileName="database.zip" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Presage\database.zip" SelfReg="false"/>
-    <ROW File="bopomofo.schema.yaml_1" Component_="bopomofo.schema.yaml_1" FileName="BOPOMO~1.YAM|bopomofo.schema.yaml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\bopomofo.schema.yaml" SelfReg="false"/>
-    <ROW File="bopomofo_express.schema.yaml_1" Component_="bopomofo.schema.yaml_1" FileName="BOPOMO~2.YAM|bopomofo_express.schema.yaml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\bopomofo_express.schema.yaml" SelfReg="false"/>
-    <ROW File="bopomofo_tw.schema.yaml_1" Component_="bopomofo.schema.yaml_1" FileName="BOPOMO~3.YAM|bopomofo_tw.schema.yaml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\bopomofo_tw.schema.yaml" SelfReg="false"/>
-    <ROW File="cangjie5.dict.yaml_1" Component_="bopomofo.schema.yaml_1" FileName="CANGJI~1.YAM|cangjie5.dict.yaml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\cangjie5.dict.yaml" SelfReg="false"/>
-    <ROW File="cangjie5.schema.yaml_1" Component_="bopomofo.schema.yaml_1" FileName="CANGJI~2.YAM|cangjie5.schema.yaml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\cangjie5.schema.yaml" SelfReg="false"/>
-    <ROW File="cangjie5_express.schema.yaml_1" Component_="bopomofo.schema.yaml_1" FileName="CANGJI~3.YAM|cangjie5_express.schema.yaml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\cangjie5_express.schema.yaml" SelfReg="false"/>
-    <ROW File="default.yaml_1" Component_="bopomofo.schema.yaml_1" FileName="DEFAUL~1.YAM|default.yaml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\default.yaml" SelfReg="false"/>
-    <ROW File="essay.txt_1" Component_="bopomofo.schema.yaml_1" FileName="essay.txt" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\essay.txt" SelfReg="false"/>
-    <ROW File="luna_pinyin.dict.yaml_1" Component_="bopomofo.schema.yaml_1" FileName="LUNA_P~1.YAM|luna_pinyin.dict.yaml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\luna_pinyin.dict.yaml" SelfReg="false"/>
-    <ROW File="luna_pinyin.schema.yaml_1" Component_="bopomofo.schema.yaml_1" FileName="LUNA_P~2.YAM|luna_pinyin.schema.yaml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\luna_pinyin.schema.yaml" SelfReg="false"/>
-    <ROW File="luna_pinyin_fluency.schema.yaml_1" Component_="bopomofo.schema.yaml_1" FileName="LUNA_P~3.YAM|luna_pinyin_fluency.schema.yaml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\luna_pinyin_fluency.schema.yaml" SelfReg="false"/>
-    <ROW File="luna_pinyin_simp.schema.yaml_1" Component_="bopomofo.schema.yaml_1" FileName="LUNA_P~4.YAM|luna_pinyin_simp.schema.yaml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\luna_pinyin_simp.schema.yaml" SelfReg="false"/>
-    <ROW File="luna_pinyin_tw.schema.yaml_1" Component_="bopomofo.schema.yaml_1" FileName="LUNA_P~5.YAM|luna_pinyin_tw.schema.yaml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\luna_pinyin_tw.schema.yaml" SelfReg="false"/>
-    <ROW File="luna_quanpin.schema.yaml_1" Component_="bopomofo.schema.yaml_1" FileName="LUNA_Q~1.YAM|luna_quanpin.schema.yaml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\luna_quanpin.schema.yaml" SelfReg="false"/>
-    <ROW File="hk2s.json_1" Component_="hk2s.json_1" FileName="HK2S~1.JSO|hk2s.json" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\opencc\hk2s.json" SelfReg="false"/>
-    <ROW File="hk2t.json_1" Component_="hk2s.json_1" FileName="HK2T~1.JSO|hk2t.json" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\opencc\hk2t.json" SelfReg="false"/>
-    <ROW File="HKVariants.ocd2_1" Component_="hk2s.json_1" FileName="HKVARI~1.OCD|HKVariants.ocd2" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\opencc\HKVariants.ocd2" SelfReg="false"/>
-    <ROW File="HKVariantsRev.ocd2_1" Component_="hk2s.json_1" FileName="HKVARI~2.OCD|HKVariantsRev.ocd2" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\opencc\HKVariantsRev.ocd2" SelfReg="false"/>
-    <ROW File="HKVariantsRevPhrases.ocd2_1" Component_="hk2s.json_1" FileName="HKVARI~3.OCD|HKVariantsRevPhrases.ocd2" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\opencc\HKVariantsRevPhrases.ocd2" SelfReg="false"/>
-    <ROW File="jp2t.json_1" Component_="hk2s.json_1" FileName="JP2T~1.JSO|jp2t.json" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\opencc\jp2t.json" SelfReg="false"/>
-    <ROW File="JPShinjitaiCharacters.ocd2_1" Component_="hk2s.json_1" FileName="JPSHIN~1.OCD|JPShinjitaiCharacters.ocd2" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\opencc\JPShinjitaiCharacters.ocd2" SelfReg="false"/>
-    <ROW File="JPShinjitaiPhrases.ocd2_1" Component_="hk2s.json_1" FileName="JPSHIN~2.OCD|JPShinjitaiPhrases.ocd2" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\opencc\JPShinjitaiPhrases.ocd2" SelfReg="false"/>
-    <ROW File="JPVariants.ocd2_1" Component_="hk2s.json_1" FileName="JPVARI~1.OCD|JPVariants.ocd2" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\opencc\JPVariants.ocd2" SelfReg="false"/>
-    <ROW File="JPVariantsRev.ocd2_1" Component_="hk2s.json_1" FileName="JPVARI~2.OCD|JPVariantsRev.ocd2" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\opencc\JPVariantsRev.ocd2" SelfReg="false"/>
-    <ROW File="s2hk.json_1" Component_="hk2s.json_1" FileName="S2HK~1.JSO|s2hk.json" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\opencc\s2hk.json" SelfReg="false"/>
-    <ROW File="s2t.json_1" Component_="hk2s.json_1" FileName="S2T~1.JSO|s2t.json" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\opencc\s2t.json" SelfReg="false"/>
-    <ROW File="s2tw.json_1" Component_="hk2s.json_1" FileName="S2TW~1.JSO|s2tw.json" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\opencc\s2tw.json" SelfReg="false"/>
-    <ROW File="s2twp.json_1" Component_="hk2s.json_1" FileName="S2TWP~1.JSO|s2twp.json" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\opencc\s2twp.json" SelfReg="false"/>
-    <ROW File="STCharacters.ocd2_1" Component_="hk2s.json_1" FileName="STCHAR~1.OCD|STCharacters.ocd2" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\opencc\STCharacters.ocd2" SelfReg="false"/>
-    <ROW File="STPhrases.ocd2_1" Component_="hk2s.json_1" FileName="STPHRA~1.OCD|STPhrases.ocd2" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\opencc\STPhrases.ocd2" SelfReg="false"/>
-    <ROW File="t2hk.json_1" Component_="hk2s.json_1" FileName="T2HK~1.JSO|t2hk.json" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\opencc\t2hk.json" SelfReg="false"/>
-    <ROW File="t2jp.json_1" Component_="hk2s.json_1" FileName="T2JP~1.JSO|t2jp.json" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\opencc\t2jp.json" SelfReg="false"/>
-    <ROW File="t2s.json_1" Component_="hk2s.json_1" FileName="T2S~1.JSO|t2s.json" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\opencc\t2s.json" SelfReg="false"/>
-    <ROW File="t2tw.json_1" Component_="hk2s.json_1" FileName="T2TW~1.JSO|t2tw.json" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\opencc\t2tw.json" SelfReg="false"/>
-    <ROW File="TSCharacters.ocd2_1" Component_="hk2s.json_1" FileName="TSCHAR~1.OCD|TSCharacters.ocd2" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\opencc\TSCharacters.ocd2" SelfReg="false"/>
-    <ROW File="TSPhrases.ocd2_1" Component_="hk2s.json_1" FileName="TSPHRA~1.OCD|TSPhrases.ocd2" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\opencc\TSPhrases.ocd2" SelfReg="false"/>
-    <ROW File="tw2s.json_1" Component_="hk2s.json_1" FileName="TW2S~1.JSO|tw2s.json" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\opencc\tw2s.json" SelfReg="false"/>
-    <ROW File="tw2sp.json_1" Component_="hk2s.json_1" FileName="TW2SP~1.JSO|tw2sp.json" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\opencc\tw2sp.json" SelfReg="false"/>
-    <ROW File="tw2t.json_1" Component_="hk2s.json_1" FileName="TW2T~1.JSO|tw2t.json" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\opencc\tw2t.json" SelfReg="false"/>
-    <ROW File="TWPhrases.ocd2_1" Component_="hk2s.json_1" FileName="TWPHRA~1.OCD|TWPhrases.ocd2" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\opencc\TWPhrases.ocd2" SelfReg="false"/>
-    <ROW File="TWPhrasesRev.ocd2_1" Component_="hk2s.json_1" FileName="TWPHRA~2.OCD|TWPhrasesRev.ocd2" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\opencc\TWPhrasesRev.ocd2" SelfReg="false"/>
-    <ROW File="TWVariants.ocd2_1" Component_="hk2s.json_1" FileName="TWVARI~1.OCD|TWVariants.ocd2" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\opencc\TWVariants.ocd2" SelfReg="false"/>
-    <ROW File="TWVariantsRev.ocd2_1" Component_="hk2s.json_1" FileName="TWVARI~2.OCD|TWVariantsRev.ocd2" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\opencc\TWVariantsRev.ocd2" SelfReg="false"/>
-    <ROW File="TWVariantsRevPhrases.ocd2_1" Component_="hk2s.json_1" FileName="TWVARI~3.OCD|TWVariantsRevPhrases.ocd2" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\opencc\TWVariantsRevPhrases.ocd2" SelfReg="false"/>
-    <ROW File="pinyin.yaml_1" Component_="bopomofo.schema.yaml_1" FileName="PINYIN~1.YAM|pinyin.yaml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\pinyin.yaml" SelfReg="false"/>
-    <ROW File="rime.dll_1" Component_="rime.dll_1" FileName="rime.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\rime.dll" SelfReg="false"/>
-    <ROW File="symbols.yaml_1" Component_="bopomofo.schema.yaml_1" FileName="SYMBOL~1.YAM|symbols.yaml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\symbols.yaml" SelfReg="false"/>
-    <ROW File="terra_pinyin.dict.yaml_1" Component_="bopomofo.schema.yaml_1" FileName="TERRA_~1.YAM|terra_pinyin.dict.yaml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\terra_pinyin.dict.yaml" SelfReg="false"/>
-    <ROW File="terra_pinyin.schema.yaml_1" Component_="bopomofo.schema.yaml_1" FileName="TERRA_~2.YAM|terra_pinyin.schema.yaml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\terra_pinyin.schema.yaml" SelfReg="false"/>
-    <ROW File="zhuyin.yaml_1" Component_="bopomofo.schema.yaml_1" FileName="ZHUYIN~1.YAM|zhuyin.yaml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Rime\zhuyin.yaml" SelfReg="false"/>
-    <ROW File="Attention.wav_1" Component_="Attention.wav_1" FileName="ATTENT~1.WAV|Attention.wav" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Sounds\Attention.wav" SelfReg="false"/>
-    <ROW File="Click1.wav_1" Component_="Attention.wav_1" FileName="Click1.wav" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Sounds\Click1.wav" SelfReg="false"/>
-    <ROW File="Click2.wav_1" Component_="Attention.wav_1" FileName="Click2.wav" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Sounds\Click2.wav" SelfReg="false"/>
-    <ROW File="Click3.wav_1" Component_="Attention.wav_1" FileName="Click3.wav" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Sounds\Click3.wav" SelfReg="false"/>
-    <ROW File="Click4.wav_1" Component_="Attention.wav_1" FileName="Click4.wav" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Sounds\Click4.wav" SelfReg="false"/>
-    <ROW File="Click5.wav_1" Component_="Attention.wav_1" FileName="Click5.wav" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Sounds\Click5.wav" SelfReg="false"/>
-    <ROW File="Click6.wav_1" Component_="Attention.wav_1" FileName="Click6.wav" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Sounds\Click6.wav" SelfReg="false"/>
-    <ROW File="Falling1.wav_1" Component_="Attention.wav_1" FileName="Falling1.wav" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Sounds\Falling1.wav" SelfReg="false"/>
-    <ROW File="Falling2.wav_1" Component_="Attention.wav_1" FileName="Falling2.wav" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Sounds\Falling2.wav" SelfReg="false"/>
-    <ROW File="MouseClick1.wav_1" Component_="Attention.wav_1" FileName="MOUSEC~1.WAV|MouseClick1.wav" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Sounds\MouseClick1.wav" SelfReg="false"/>
-    <ROW File="MouseClick2.wav_1" Component_="Attention.wav_1" FileName="MOUSEC~2.WAV|MouseClick2.wav" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Sounds\MouseClick2.wav" SelfReg="false"/>
-    <ROW File="MouseClick3.wav_1" Component_="Attention.wav_1" FileName="MOUSEC~3.WAV|MouseClick3.wav" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Sounds\MouseClick3.wav" SelfReg="false"/>
-    <ROW File="MouseClick4.wav_1" Component_="Attention.wav_1" FileName="MOUSEC~4.WAV|MouseClick4.wav" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Sounds\MouseClick4.wav" SelfReg="false"/>
-    <ROW File="MouseDoubleClick1.wav_1" Component_="Attention.wav_1" FileName="MOUSED~1.WAV|MouseDoubleClick1.wav" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Sounds\MouseDoubleClick1.wav" SelfReg="false"/>
-    <ROW File="MouseDoubleClick2.wav_1" Component_="Attention.wav_1" FileName="MOUSED~2.WAV|MouseDoubleClick2.wav" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Sounds\MouseDoubleClick2.wav" SelfReg="false"/>
-    <ROW File="MouseDoubleClick3.wav_1" Component_="Attention.wav_1" FileName="MOUSED~3.WAV|MouseDoubleClick3.wav" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Sounds\MouseDoubleClick3.wav" SelfReg="false"/>
-    <ROW File="MouseDown1.wav_1" Component_="Attention.wav_1" FileName="MOUSED~4.WAV|MouseDown1.wav" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Sounds\MouseDown1.wav" SelfReg="false"/>
-    <ROW File="MouseDown2.wav_1" Component_="Attention.wav_1" FileName="MOUSED~5.WAV|MouseDown2.wav" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Sounds\MouseDown2.wav" SelfReg="false"/>
-    <ROW File="MouseDown3.wav_1" Component_="Attention.wav_1" FileName="MOUSED~6.WAV|MouseDown3.wav" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Sounds\MouseDown3.wav" SelfReg="false"/>
-    <ROW File="MouseDown4.wav_1" Component_="Attention.wav_1" FileName="MOUSED~7.WAV|MouseDown4.wav" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Sounds\MouseDown4.wav" SelfReg="false"/>
-    <ROW File="MouseScroll1.wav_1" Component_="Attention.wav_1" FileName="MOUSES~1.WAV|MouseScroll1.wav" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Sounds\MouseScroll1.wav" SelfReg="false"/>
-    <ROW File="MouseScroll2.wav_1" Component_="Attention.wav_1" FileName="MOUSES~2.WAV|MouseScroll2.wav" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Sounds\MouseScroll2.wav" SelfReg="false"/>
-    <ROW File="MouseScroll3.wav_1" Component_="Attention.wav_1" FileName="MOUSES~3.WAV|MouseScroll3.wav" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Sounds\MouseScroll3.wav" SelfReg="false"/>
-    <ROW File="MouseScroll4.wav_1" Component_="Attention.wav_1" FileName="MOUSES~4.WAV|MouseScroll4.wav" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Sounds\MouseScroll4.wav" SelfReg="false"/>
-    <ROW File="MouseScroll5.wav_1" Component_="Attention.wav_1" FileName="MOUSES~5.WAV|MouseScroll5.wav" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Sounds\MouseScroll5.wav" SelfReg="false"/>
-    <ROW File="MouseScroll6.wav_1" Component_="Attention.wav_1" FileName="MOUSES~6.WAV|MouseScroll6.wav" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Sounds\MouseScroll6.wav" SelfReg="false"/>
-    <ROW File="MouseUp1.wav_1" Component_="Attention.wav_1" FileName="MouseUp1.wav" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Sounds\MouseUp1.wav" SelfReg="false"/>
-    <ROW File="MouseUp2.wav_1" Component_="Attention.wav_1" FileName="MouseUp2.wav" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Sounds\MouseUp2.wav" SelfReg="false"/>
-    <ROW File="MouseUp3.wav_1" Component_="Attention.wav_1" FileName="MouseUp3.wav" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Sounds\MouseUp3.wav" SelfReg="false"/>
-    <ROW File="MouseUp4.wav_1" Component_="Attention.wav_1" FileName="MouseUp4.wav" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Sounds\MouseUp4.wav" SelfReg="false"/>
-    <ROW File="Rising1.wav_1" Component_="Attention.wav_1" FileName="Rising1.wav" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Sounds\Rising1.wav" SelfReg="false"/>
-    <ROW File="Rising2.wav_1" Component_="Attention.wav_1" FileName="Rising2.wav" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Sounds\Rising2.wav" SelfReg="false"/>
-    <ROW File="Tone1.wav_1" Component_="Attention.wav_1" FileName="Tone1.wav" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Sounds\Tone1.wav" SelfReg="false"/>
-    <ROW File="Tone2.wav_1" Component_="Attention.wav_1" FileName="Tone2.wav" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Sounds\Tone2.wav" SelfReg="false"/>
-    <ROW File="Tone3.wav_1" Component_="Attention.wav_1" FileName="Tone3.wav" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Sounds\Tone3.wav" SelfReg="false"/>
-    <ROW File="Tone4.wav_1" Component_="Attention.wav_1" FileName="Tone4.wav" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\Resources\Sounds\Tone4.wav" SelfReg="false"/>
-    <ROW File="OptiKey.resources.dll_51" Component_="OptiKey.resources.dll_51" FileName="OPTIKE~1.DLL|OptiKey.resources.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\ru-RU\OptiKey.resources.dll" SelfReg="false"/>
-    <ROW File="SharpDX.DirectInput.dll_1" Component_="SharpDX.DirectInput.dll_1" FileName="SHARPD~1.DLL|SharpDX.DirectInput.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\SharpDX.DirectInput.dll" SelfReg="false"/>
-    <ROW File="SharpDX.DirectInput.pdb_1" Component_="SharpDX.DirectInput.dll_1" FileName="SHARPD~1.PDB|SharpDX.DirectInput.pdb" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\SharpDX.DirectInput.pdb" SelfReg="false"/>
-    <ROW File="SharpDX.DirectInput.xml_1" Component_="Bass.Net.xml_1" FileName="SHARPD~1.XML|SharpDX.DirectInput.xml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\SharpDX.DirectInput.xml" SelfReg="false"/>
-    <ROW File="SharpDX.dll_1" Component_="SharpDX.dll_1" FileName="SharpDX.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\SharpDX.dll" SelfReg="false"/>
-    <ROW File="SharpDX.pdb_1" Component_="SharpDX.dll_1" FileName="SharpDX.pdb" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\SharpDX.pdb" SelfReg="false"/>
-    <ROW File="SharpDX.XInput.dll_1" Component_="SharpDX.XInput.dll_1" FileName="SHARPD~2.DLL|SharpDX.XInput.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\SharpDX.XInput.dll" SelfReg="false"/>
-    <ROW File="SharpDX.XInput.pdb_1" Component_="SharpDX.XInput.dll_1" FileName="SHARPD~2.PDB|SharpDX.XInput.pdb" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\SharpDX.XInput.pdb" SelfReg="false"/>
-    <ROW File="SharpDX.XInput.xml_1" Component_="Bass.Net.xml_1" FileName="SHARPD~2.XML|SharpDX.XInput.xml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\SharpDX.XInput.xml" SelfReg="false"/>
-    <ROW File="SharpVectors.Converters.dll_1" Component_="SharpVectors.Converters.dll_1" FileName="SHARPV~1.DLL|SharpVectors.Converters.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\SharpVectors.Converters.dll" SelfReg="false"/>
-    <ROW File="SharpVectors.Core.dll_1" Component_="SharpVectors.Core.dll_1" FileName="SHARPV~2.DLL|SharpVectors.Core.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\SharpVectors.Core.dll" SelfReg="false"/>
-    <ROW File="SharpVectors.Css.dll_1" Component_="SharpVectors.Css.dll_1" FileName="SHARPV~3.DLL|SharpVectors.Css.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\SharpVectors.Css.dll" SelfReg="false"/>
-    <ROW File="SharpVectors.Dom.dll_1" Component_="SharpVectors.Dom.dll_1" FileName="SHARPV~4.DLL|SharpVectors.Dom.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\SharpVectors.Dom.dll" SelfReg="false"/>
-    <ROW File="SharpVectors.Model.dll_1" Component_="SharpVectors.Model.dll_1" FileName="SHARPV~5.DLL|SharpVectors.Model.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\SharpVectors.Model.dll" SelfReg="false"/>
-    <ROW File="SharpVectors.Rendering.Gdi.dll_1" Component_="SharpVectors.Rendering.Gdi.dll_1" FileName="SHARPV~6.DLL|SharpVectors.Rendering.Gdi.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\SharpVectors.Rendering.Gdi.dll" SelfReg="false"/>
-    <ROW File="SharpVectors.Rendering.Wpf.dll_1" Component_="SharpVectors.Rendering.Wpf.dll_1" FileName="SHARPV~7.DLL|SharpVectors.Rendering.Wpf.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\SharpVectors.Rendering.Wpf.dll" SelfReg="false"/>
-    <ROW File="SharpVectors.Runtime.dll_1" Component_="SharpVectors.Runtime.dll_1" FileName="SHARPV~8.DLL|SharpVectors.Runtime.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\SharpVectors.Runtime.dll" SelfReg="false"/>
-    <ROW File="OptiKey.resources.dll_52" Component_="OptiKey.resources.dll_52" FileName="OPTIKE~1.DLL|OptiKey.resources.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\sk-SK\OptiKey.resources.dll" SelfReg="false"/>
-    <ROW File="OptiKey.resources.dll_53" Component_="OptiKey.resources.dll_53" FileName="OPTIKE~1.DLL|OptiKey.resources.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\sl-SI\OptiKey.resources.dll" SelfReg="false"/>
-    <ROW File="OptiKey.resources.dll_54" Component_="OptiKey.resources.dll_54" FileName="OPTIKE~1.DLL|OptiKey.resources.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\sr-Cyrl-RS\OptiKey.resources.dll" SelfReg="false"/>
-    <ROW File="swresample3.dll_1" Component_="swresample3.dll_1" FileName="SWRESA~1.DLL|swresample-3.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\swresample-3.dll" SelfReg="false"/>
-    <ROW File="System.IO.Compression.dll_1" Component_="System.IO.Compression.dll_1" FileName="SYSTEM~1.DLL|System.IO.Compression.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\System.IO.Compression.dll" SelfReg="false"/>
-    <ROW File="System.Reactive.Core.dll_1" Component_="System.Reactive.Core.dll_1" FileName="SYSTEM~2.DLL|System.Reactive.Core.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\System.Reactive.Core.dll" SelfReg="false"/>
-    <ROW File="System.Reactive.Core.xml_1" Component_="Bass.Net.xml_1" FileName="SYSTEM~1.XML|System.Reactive.Core.xml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\System.Reactive.Core.xml" SelfReg="false"/>
-    <ROW File="System.Reactive.Interfaces.dll_1" Component_="System.Reactive.Interfaces.dll_1" FileName="SYSTEM~3.DLL|System.Reactive.Interfaces.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\System.Reactive.Interfaces.dll" SelfReg="false"/>
-    <ROW File="System.Reactive.Interfaces.xml_1" Component_="Bass.Net.xml_1" FileName="SYSTEM~2.XML|System.Reactive.Interfaces.xml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\System.Reactive.Interfaces.xml" SelfReg="false"/>
-    <ROW File="System.Reactive.Linq.dll_1" Component_="System.Reactive.Linq.dll_1" FileName="SYSTEM~4.DLL|System.Reactive.Linq.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\System.Reactive.Linq.dll" SelfReg="false"/>
-    <ROW File="System.Reactive.Linq.xml_1" Component_="Bass.Net.xml_1" FileName="SYSTEM~3.XML|System.Reactive.Linq.xml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\System.Reactive.Linq.xml" SelfReg="false"/>
-    <ROW File="System.Reactive.PlatformServices.dll_1" Component_="System.Reactive.PlatformServices.dll_1" FileName="SYSTEM~5.DLL|System.Reactive.PlatformServices.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\System.Reactive.PlatformServices.dll" SelfReg="false"/>
-    <ROW File="System.Reactive.PlatformServices.xml_1" Component_="Bass.Net.xml_1" FileName="SYSTEM~4.XML|System.Reactive.PlatformServices.xml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\System.Reactive.PlatformServices.xml" SelfReg="false"/>
-    <ROW File="System.Reactive.Windows.Threading.dll_1" Component_="System.Reactive.Windows.Threading.dll_1" FileName="SYSTEM~6.DLL|System.Reactive.Windows.Threading.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\System.Reactive.Windows.Threading.dll" SelfReg="false"/>
-    <ROW File="System.Reactive.Windows.Threading.xml_1" Component_="Bass.Net.xml_1" FileName="SYSTEM~5.XML|System.Reactive.Windows.Threading.xml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\System.Reactive.Windows.Threading.xml" SelfReg="false"/>
-    <ROW File="System.Windows.Interactivity.dll_1" Component_="System.Windows.Interactivity.dll_1" FileName="SYSTEM~7.DLL|System.Windows.Interactivity.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\System.Windows.Interactivity.dll" SelfReg="false"/>
-    <ROW File="TETControls.dll_1" Component_="TETControls.dll_1" FileName="TETCON~1.DLL|TETControls.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\TETControls.dll" SelfReg="false"/>
-    <ROW File="TETCSharpClient.dll_1" Component_="TETCSharpClient.dll_1" FileName="TETCSH~1.DLL|TETCSharpClient.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\TETCSharpClient.dll" SelfReg="false"/>
-    <ROW File="OptiKey.resources.dll_55" Component_="OptiKey.resources.dll_55" FileName="OPTIKE~1.DLL|OptiKey.resources.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\tr-TR\OptiKey.resources.dll" SelfReg="false"/>
-    <ROW File="OptiKey.resources.dll_56" Component_="OptiKey.resources.dll_56" FileName="OPTIKE~1.DLL|OptiKey.resources.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\uk-UA\OptiKey.resources.dll" SelfReg="false"/>
-    <ROW File="OptiKey.resources.dll_57" Component_="OptiKey.resources.dll_57" FileName="OPTIKE~1.DLL|OptiKey.resources.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\ur-PK\OptiKey.resources.dll" SelfReg="false"/>
-    <ROW File="WindowsInput.dll_1" Component_="WindowsInput.dll_1" FileName="WINDOW~1.DLL|WindowsInput.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\WindowsInput.dll" SelfReg="false"/>
-    <ROW File="WindowsInput.pdb_1" Component_="WindowsInput.dll_1" FileName="WINDOW~1.PDB|WindowsInput.pdb" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\WindowsInput.pdb" SelfReg="false"/>
-    <ROW File="WindowsInput.xml_1" Component_="Bass.Net.xml_1" FileName="WINDOW~1.XML|WindowsInput.xml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\WindowsInput.xml" SelfReg="false"/>
-    <ROW File="WindowsRecipes.TaskbarSingleInstan_1_ce.dll" Component_="WindowsRecipes.TaskbarSingleInstan_1_ce.dll" FileName="WINDOW~2.DLL|WindowsRecipes.TaskbarSingleInstance.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\WindowsRecipes.TaskbarSingleInstance.dll" SelfReg="false"/>
-    <ROW File="WindowsRecipes.TaskbarSingleInstan_1_ce.pdb" Component_="WindowsRecipes.TaskbarSingleInstan_1_ce.dll" FileName="WINDOW~2.PDB|WindowsRecipes.TaskbarSingleInstance.pdb" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\WindowsRecipes.TaskbarSingleInstance.pdb" SelfReg="false"/>
-    <ROW File="WindowsRecipes.TaskbarSingleInstan_1_ce.Wpf.dll" Component_="WindowsRecipes.TaskbarSingleInstan_2_ce.Wpf.dll" FileName="WINDOW~3.DLL|WindowsRecipes.TaskbarSingleInstance.Wpf.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\WindowsRecipes.TaskbarSingleInstance.Wpf.dll" SelfReg="false"/>
-    <ROW File="WindowsRecipes.TaskbarSingleInstan_1_ce.Wpf.pdb" Component_="WindowsRecipes.TaskbarSingleInstan_2_ce.Wpf.dll" FileName="WINDOW~3.PDB|WindowsRecipes.TaskbarSingleInstance.Wpf.pdb" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\WindowsRecipes.TaskbarSingleInstance.Wpf.pdb" SelfReg="false"/>
-    <ROW File="WindowsRecipes.TaskbarSingleInstan_1_ce.Wpf.xml" Component_="Bass.Net.xml_1" FileName="WINDOW~2.XML|WindowsRecipes.TaskbarSingleInstance.Wpf.xml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\WindowsRecipes.TaskbarSingleInstance.Wpf.xml" SelfReg="false"/>
-    <ROW File="WindowsRecipes.TaskbarSingleInstan_1_ce.xml" Component_="Bass.Net.xml_1" FileName="WINDOW~3.XML|WindowsRecipes.TaskbarSingleInstance.xml" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\WindowsRecipes.TaskbarSingleInstance.xml" SelfReg="false"/>
-    <ROW File="OptiKey.resources.dll_58" Component_="OptiKey.resources.dll_58" FileName="OPTIKE~1.DLL|OptiKey.resources.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\zh-CN\OptiKey.resources.dll" SelfReg="false"/>
-    <ROW File="OptiKey.resources.dll_59" Component_="OptiKey.resources.dll_59" FileName="OPTIKE~1.DLL|OptiKey.resources.dll" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9\zh-TW\OptiKey.resources.dll" SelfReg="false"/>
-    <ROW File="Optikey2025AKv9.zip" Component_="Bass.Net.xml" FileName="OPTIKE~2.ZIP|Optikey-2025-AK-v9.zip" Attributes="0" SourcePath="..\src\JuliusSweetland.OptiKey.Pro\bin\x64\Release\Optikey-2025-AK-v9.zip" SelfReg="false"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
     <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
@@ -1305,102 +907,6 @@
     <ROW Feature_="MainFeature" Component_="rime.dll"/>
     <ROW Feature_="MainFeature" Component_="OptiKey.resources.dll_28"/>
     <ROW Feature_="MainFeature" Component_="OptiKey.resources.dll_29"/>
-    <ROW Feature_="MainFeature" Component_="avcodec58.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="avdevice58.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="avfilter7.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="avformat58.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="avutil56.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="bass.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="Bass.Net.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="Bass.Net.xml_1"/>
-    <ROW Feature_="MainFeature" Component_="OptiKey.resources.dll_30"/>
-    <ROW Feature_="MainFeature" Component_="ControlzEx.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="OptiKey.resources.dll_31"/>
-    <ROW Feature_="MainFeature" Component_="OptiKey.resources.dll_32"/>
-    <ROW Feature_="MainFeature" Component_="OptiKey.resources.dll_33"/>
-    <ROW Feature_="MainFeature" Component_="CatalanSpain.dic_1"/>
-    <ROW Feature_="MainFeature" Component_="OptiKey.resources.dll_34"/>
-    <ROW Feature_="MainFeature" Component_="OptiKey.resources.dll_35"/>
-    <ROW Feature_="MainFeature" Component_="OptiKey.resources.dll_36"/>
-    <ROW Feature_="MainFeature" Component_="OptiKey.resources.dll_37"/>
-    <ROW Feature_="MainFeature" Component_="OptiKey.resources.dll_38"/>
-    <ROW Feature_="MainFeature" Component_="OptiKey.resources.dll_39"/>
-    <ROW Feature_="MainFeature" Component_="OptiKey.resources.dll_40"/>
-    <ROW Feature_="MainFeature" Component_="OptiKey.resources.dll_41"/>
-    <ROW Feature_="MainFeature" Component_="OptiKey.resources.dll_42"/>
-    <ROW Feature_="MainFeature" Component_="OptiKey.resources.dll_43"/>
-    <ROW Feature_="MainFeature" Component_="Interop.SpeechLib.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="IrisbondAPI.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="IrisbondHiruAPI.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="OptiKey.resources.dll_44"/>
-    <ROW Feature_="MainFeature" Component_="OptiKey.resources.dll_45"/>
-    <ROW Feature_="MainFeature" Component_="JuliusSweetland.OptiKey.Contracts.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="OptiKey.resources.dll_46"/>
-    <ROW Feature_="MainFeature" Component_="OptiKey.resources.dll_47"/>
-    <ROW Feature_="MainFeature" Component_="log4net.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="MahApps.Metro.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="Microsoft.Expression.Interactions.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="Microsoft.Practices.ServiceLocatio_1_n.dll"/>
-    <ROW Feature_="MainFeature" Component_="MouseKeyboardActivityMonitor.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="Newtonsoft.Json.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="OptiKey.resources.dll_48"/>
-    <ROW Feature_="MainFeature" Component_="nunit.framework.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="Octokit.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="OptiKey.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="OptikeyPro.exe_1"/>
-    <ROW Feature_="MainFeature" Component_="OptiKeyStandardPlugins.dll_2"/>
-    <ROW Feature_="MainFeature" Component_="PGRFlyCapture.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="OptiKey.resources.dll_49"/>
-    <ROW Feature_="MainFeature" Component_="PointSourceUtils.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="presage.net.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="Prism.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="Prism.Wpf.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="OptiKey.resources.dll_50"/>
-    <ROW Feature_="MainFeature" Component_="back.png_1"/>
-    <ROW Feature_="MainFeature" Component_="EyeGestures.xml_1"/>
-    <ROW Feature_="MainFeature" Component_="tobiitrackers.txt_1"/>
-    <ROW Feature_="MainFeature" Component_="B612licenceeplv10.html_1"/>
-    <ROW Feature_="MainFeature" Component_="AltAlphaHorizontalKeyboard.xml_1"/>
-    <ROW Feature_="MainFeature" Component_="Demo_Bottom.xml_1"/>
-    <ROW Feature_="MainFeature" Component_="OptiKeyStandardPlugins.dll_3"/>
-    <ROW Feature_="MainFeature" Component_="database.zip_1"/>
-    <ROW Feature_="MainFeature" Component_="bopomofo.schema.yaml_1"/>
-    <ROW Feature_="MainFeature" Component_="hk2s.json_1"/>
-    <ROW Feature_="MainFeature" Component_="rime.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="Attention.wav_1"/>
-    <ROW Feature_="MainFeature" Component_="OptiKey.resources.dll_51"/>
-    <ROW Feature_="MainFeature" Component_="SharpDX.DirectInput.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="SharpDX.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="SharpDX.XInput.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="SharpVectors.Converters.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="SharpVectors.Core.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="SharpVectors.Css.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="SharpVectors.Dom.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="SharpVectors.Model.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="SharpVectors.Rendering.Gdi.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="SharpVectors.Rendering.Wpf.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="SharpVectors.Runtime.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="OptiKey.resources.dll_52"/>
-    <ROW Feature_="MainFeature" Component_="OptiKey.resources.dll_53"/>
-    <ROW Feature_="MainFeature" Component_="OptiKey.resources.dll_54"/>
-    <ROW Feature_="MainFeature" Component_="swresample3.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="System.IO.Compression.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="System.Reactive.Core.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="System.Reactive.Interfaces.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="System.Reactive.Linq.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="System.Reactive.PlatformServices.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="System.Reactive.Windows.Threading.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="System.Windows.Interactivity.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="TETControls.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="TETCSharpClient.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="OptiKey.resources.dll_55"/>
-    <ROW Feature_="MainFeature" Component_="OptiKey.resources.dll_56"/>
-    <ROW Feature_="MainFeature" Component_="OptiKey.resources.dll_57"/>
-    <ROW Feature_="MainFeature" Component_="WindowsInput.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="WindowsRecipes.TaskbarSingleInstan_1_ce.dll"/>
-    <ROW Feature_="MainFeature" Component_="WindowsRecipes.TaskbarSingleInstan_2_ce.Wpf.dll"/>
-    <ROW Feature_="MainFeature" Component_="OptiKey.resources.dll_58"/>
-    <ROW Feature_="MainFeature" Component_="OptiKey.resources.dll_59"/>
     <ROW Feature_="C4FE6FD5B7C4D07B3A313E754A9A6A8" Component_="C4FE6FD5B7C4D07B3A313E754A9A6A8"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
