@@ -12,7 +12,7 @@
 <artifact-configuration xmlns="http://signpath.io/artifact-configuration/v1">
   <zip-file>
     <msi-file path="OptiKeyPro.msi">
-      <pe-file path="OptikeyPro.exe">
+      <pe-file path="APPDIR/OptikeyPro.exe">
         <authenticode-sign/>
       </pe-file>
       <authenticode-sign/>
