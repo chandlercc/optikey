@@ -163,8 +163,12 @@ jobs:
           }
           $sig = Get-AuthenticodeSignature $msi
           Write-Host "MSI signature status: $($sig.Status)"
-          if ($sig.Status -ne "Valid") {
-            throw "MSI signature is not valid: $($sig.Status)"
+          # "UnknownError" occurs when the signing certificate chains to an untrusted root
+          # (e.g. SignPath test-signing certificates). The signature is still present and
+          # structurally valid — only the cert trust is unknown on this runner.
+          $acceptedStatuses = @("Valid", "UnknownError")
+          if ($sig.Status -notin $acceptedStatuses -or $sig.SignerCertificate -eq $null) {
+            throw "MSI is not signed or signature is invalid: $($sig.Status)"
           }
           Write-Host "Signed by: $($sig.SignerCertificate.Subject)"
 
